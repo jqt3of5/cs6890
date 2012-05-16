@@ -1,4 +1,4 @@
-package cs6890.skillbuilder;
+package structures;
 
 public class Name {
 	

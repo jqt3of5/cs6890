@@ -1,12 +1,16 @@
-package cs6890.skillbuilder;
+package structures;
 
 import java.util.ArrayList;
 
+import annotations.Protected;
+
+
 public class Person {
 	
-	ArrayList<Name> m_names;
-	ArrayList<PhoneNumber> m_numbers;
+	@Protected ArrayList<Name> m_names;
+	@Protected ArrayList<PhoneNumber> m_numbers;
 	ArrayList<Address> m_addresses;
+	
 	public Person()
 	{
 		m_names = new ArrayList<Name>();

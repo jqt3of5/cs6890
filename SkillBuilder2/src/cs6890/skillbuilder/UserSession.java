@@ -1,43 +1,35 @@
 package cs6890.skillbuilder;
 
+import java.util.ArrayList;
+
 public class UserSession {
 
 	private static UserSession session = null;
-	private int sessionId;
-	private String userName;
-	public enum Permissions{READ, WRITE};
+
+	private ArrayList<String> propertyPermissions;
+	
 	
 	private UserSession()
 	{
-		sessionId = -1;
-		userName = "";
+		propertyPermissions = new ArrayList<String>();
+	}
+
+	void addPermission(String property)
+	{
+		propertyPermissions.add(property);
 	}
 	
-	public UserSession getSession()
+	boolean canAccess(String property)
+	{
+		return propertyPermissions.contains(property);	
+	}
+	public static UserSession getSession()
 	{
 		if (session == null)
 		{
 			session = new UserSession();
-
 		}
-		
 		return session;
 	}
 	
-	public int getSessionId() {
-		return sessionId;
-	}
-
-	public void setSessionId(int sessionId) {
-		this.sessionId = sessionId;
-	}
-
-	public String getUserName() {
-		return userName;
-	}
-
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
-
 }

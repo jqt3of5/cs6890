@@ -1,6 +1,9 @@
-package cs6890.skillbuilder;
+package structures;
 
 import java.util.ArrayList;
+
+import annotations.Protected;
+
 
 public class Patient extends Person {
 
@@ -11,7 +14,7 @@ public class Patient extends Person {
 	}
 	private int m_id;
 	private String m_gender;
-	private Date m_birthday;
+	@Protected private Date m_birthday;
 	private ArrayList<Person> m_emergencyContacts;
 	private ArrayList<Person> m_physicians;
 	//extension
@@ -60,7 +63,7 @@ public class Patient extends Person {
 	public void setGender(String gender) {
 		this.m_gender = gender;
 	}
-	public Date getBbirthday() {
+	public Date getBirthday() {
 		return m_birthday;
 	}
 	public void setBirthday(Date birthday) {
