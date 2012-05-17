@@ -13,6 +13,8 @@ public aspect AccessRights {
 		UserSession.getSession().addPermission("get(Person.m_names)");
 		UserSession.getSession().addPermission("set(Person.m_numbers)");
 		UserSession.getSession().addPermission("get(Person.m_numbers)");
+		UserSession.getSession().addPermission("set(Person.m_addresses)");
+		UserSession.getSession().addPermission("get(Person.m_addresses)");
 	}
 	
 	void around(Object obj) : writepoint(obj)
