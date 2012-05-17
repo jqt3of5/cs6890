@@ -2,17 +2,19 @@ package structures;
 
 import java.util.ArrayList;
 
+import annotations.Encrypt;
 import annotations.Protected;
 
 
 public class Person {
 	
-	@Protected ArrayList<Name> m_names;
+	@Encrypt @Protected ArrayList<Name> m_names;
 	@Protected ArrayList<PhoneNumber> m_numbers;
-	ArrayList<Address> m_addresses;
+	@Protected ArrayList<Address> m_addresses;
 	
 	public Person()
 	{
+		
 		m_names = new ArrayList<Name>();
 		m_numbers = new ArrayList<PhoneNumber>();
 		m_addresses = new ArrayList<Address>();

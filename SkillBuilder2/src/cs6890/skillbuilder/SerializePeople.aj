@@ -24,7 +24,6 @@ public aspect SerializePeople {
 	declare parents : PhoneNumber implements Serializable;
 	
 	
-	private String encryptionKey = "key";
 	private String filename = "peopleDump.dat";
 	
 	public void init()
