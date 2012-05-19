@@ -26,12 +26,10 @@ public aspect SkillBuilderAspect {
 	}
 	before() : (trace() && cflow(trace()))
 	{
-		
-		
 		indents += 1;
 		for (int i = 1; i < indents; ++i)
 			fout.print("\t");
-		fout.println(thisJoinPoint);
+		fout.println("Entering " + thisJoinPoint + "\n");
 		
 	}
 	
@@ -52,7 +50,12 @@ public aspect SkillBuilderAspect {
 	}
 	after() returning : trace()
 	{
+		for (int i = 1; i < indents; ++i)
+			fout.print("\t");
+		
+		fout.println("Exiting " + thisJoinPoint + "\n");
 		indents -= 1;
+		
 	}
 	
 }

@@ -1,28 +1,112 @@
-call(void cs6890.skillbuilder.EmergencyContact.setRelationship(String))
-call(void cs6890.skillbuilder.Person.addAddress(Address))
-call(void cs6890.skillbuilder.Person.addName(Name))
-call(void cs6890.skillbuilder.Person.addName(Name))
-call(void cs6890.skillbuilder.Person.addName(Name))
-call(void cs6890.skillbuilder.Person.addName(Name))
-call(void cs6890.skillbuilder.Person.addName(Name))
-call(void cs6890.skillbuilder.Person.addPhoneNumber(PhoneNumber))
-call(void cs6890.skillbuilder.Person.addAddress(Address))
-call(void cs6890.skillbuilder.Person.addName(Name))
-call(void cs6890.skillbuilder.Person.addPhoneNumber(PhoneNumber))
-call(void cs6890.skillbuilder.Person.addAddress(Address))
-call(void cs6890.skillbuilder.Person.addName(Name))
-call(void cs6890.skillbuilder.Person.addPhoneNumber(PhoneNumber))
-call(void cs6890.skillbuilder.Patient.addPhysician(Physician))
-call(void cs6890.skillbuilder.Patient.addEmergencyContact(Person, String))
-	call(void cs6890.skillbuilder.EmergencyContact.setRelationship(String))
-call(void cs6890.skillbuilder.Patient.addEmergencyContact(Person, String))
-	call(void cs6890.skillbuilder.EmergencyContact.setRelationship(String))
-call(void cs6890.skillbuilder.Patient.removePhysician(Physician))
-call(void cs6890.skillbuilder.Patient.addDiagnosis(Diagnosis))
-call(void cs6890.skillbuilder.Patient.addDiagnosis(Diagnosis))
-call(void cs6890.skillbuilder.Patient.addDiagnosis(Diagnosis))
-call(void cs6890.skillbuilder.Patient.addDiagnosis(Diagnosis))
-call(ArrayList cs6890.skillbuilder.Patient.getDiagnosis())
-call(ArrayList cs6890.skillbuilder.Patient.getDiagnosis())
-call(ArrayList cs6890.skillbuilder.Patient.getDiagnosis())
-call(ArrayList cs6890.skillbuilder.Person.getSortedNames())
+Entering call(void cs6890.skillbuilder.EmergencyContact.setRelationship(String))
+
+Exiting call(void cs6890.skillbuilder.EmergencyContact.setRelationship(String))
+
+Entering call(void cs6890.skillbuilder.Person.addAddress(Address))
+
+Exiting call(void cs6890.skillbuilder.Person.addAddress(Address))
+
+Entering call(void cs6890.skillbuilder.Person.addName(Name))
+
+Exiting call(void cs6890.skillbuilder.Person.addName(Name))
+
+Entering call(void cs6890.skillbuilder.Person.addName(Name))
+
+Exiting call(void cs6890.skillbuilder.Person.addName(Name))
+
+Entering call(void cs6890.skillbuilder.Person.addName(Name))
+
+Exiting call(void cs6890.skillbuilder.Person.addName(Name))
+
+Entering call(void cs6890.skillbuilder.Person.addName(Name))
+
+Exiting call(void cs6890.skillbuilder.Person.addName(Name))
+
+Entering call(void cs6890.skillbuilder.Person.addName(Name))
+
+Exiting call(void cs6890.skillbuilder.Person.addName(Name))
+
+Entering call(void cs6890.skillbuilder.Person.addPhoneNumber(PhoneNumber))
+
+Exiting call(void cs6890.skillbuilder.Person.addPhoneNumber(PhoneNumber))
+
+Entering call(void cs6890.skillbuilder.Person.addAddress(Address))
+
+Exiting call(void cs6890.skillbuilder.Person.addAddress(Address))
+
+Entering call(void cs6890.skillbuilder.Person.addName(Name))
+
+Exiting call(void cs6890.skillbuilder.Person.addName(Name))
+
+Entering call(void cs6890.skillbuilder.Person.addPhoneNumber(PhoneNumber))
+
+Exiting call(void cs6890.skillbuilder.Person.addPhoneNumber(PhoneNumber))
+
+Entering call(void cs6890.skillbuilder.Person.addAddress(Address))
+
+Exiting call(void cs6890.skillbuilder.Person.addAddress(Address))
+
+Entering call(void cs6890.skillbuilder.Person.addName(Name))
+
+Exiting call(void cs6890.skillbuilder.Person.addName(Name))
+
+Entering call(void cs6890.skillbuilder.Person.addPhoneNumber(PhoneNumber))
+
+Exiting call(void cs6890.skillbuilder.Person.addPhoneNumber(PhoneNumber))
+
+Entering call(void cs6890.skillbuilder.Patient.addPhysician(Physician))
+
+Exiting call(void cs6890.skillbuilder.Patient.addPhysician(Physician))
+
+Entering call(void cs6890.skillbuilder.Patient.addEmergencyContact(Person, String))
+
+	Entering call(void cs6890.skillbuilder.EmergencyContact.setRelationship(String))
+
+	Exiting call(void cs6890.skillbuilder.EmergencyContact.setRelationship(String))
+
+Exiting call(void cs6890.skillbuilder.Patient.addEmergencyContact(Person, String))
+
+Entering call(void cs6890.skillbuilder.Patient.addEmergencyContact(Person, String))
+
+	Entering call(void cs6890.skillbuilder.EmergencyContact.setRelationship(String))
+
+	Exiting call(void cs6890.skillbuilder.EmergencyContact.setRelationship(String))
+
+Exiting call(void cs6890.skillbuilder.Patient.addEmergencyContact(Person, String))
+
+Entering call(void cs6890.skillbuilder.Patient.removePhysician(Physician))
+
+Exiting call(void cs6890.skillbuilder.Patient.removePhysician(Physician))
+
+Entering call(void cs6890.skillbuilder.Patient.addDiagnosis(Diagnosis))
+
+Exiting call(void cs6890.skillbuilder.Patient.addDiagnosis(Diagnosis))
+
+Entering call(void cs6890.skillbuilder.Patient.addDiagnosis(Diagnosis))
+
+Exiting call(void cs6890.skillbuilder.Patient.addDiagnosis(Diagnosis))
+
+Entering call(void cs6890.skillbuilder.Patient.addDiagnosis(Diagnosis))
+
+Exiting call(void cs6890.skillbuilder.Patient.addDiagnosis(Diagnosis))
+
+Entering call(void cs6890.skillbuilder.Patient.addDiagnosis(Diagnosis))
+
+Exiting call(void cs6890.skillbuilder.Patient.addDiagnosis(Diagnosis))
+
+Entering call(ArrayList cs6890.skillbuilder.Patient.getDiagnosis())
+
+Exiting call(ArrayList cs6890.skillbuilder.Patient.getDiagnosis())
+
+Entering call(ArrayList cs6890.skillbuilder.Patient.getDiagnosis())
+
+Exiting call(ArrayList cs6890.skillbuilder.Patient.getDiagnosis())
+
+Entering call(ArrayList cs6890.skillbuilder.Patient.getDiagnosis())
+
+Exiting call(ArrayList cs6890.skillbuilder.Patient.getDiagnosis())
+
+Entering call(ArrayList cs6890.skillbuilder.Person.getSortedNames())
+
+Exiting call(ArrayList cs6890.skillbuilder.Person.getSortedNames())
+

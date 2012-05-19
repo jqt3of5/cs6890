@@ -8,12 +8,18 @@ import annotations.Protected;
 
 public class Person {
 	
-	@Encrypt @Protected ArrayList<Name> m_names;
+	ArrayList<Name> m_names;
 	@Protected ArrayList<PhoneNumber> m_numbers;
-	@Protected ArrayList<Address> m_addresses;
+	ArrayList<Address> m_addresses;
+	public @Encrypt String tempStr1;
+	public @Encrypt String tempStr2;
+	public @Encrypt String tempStr3;
 	
 	public Person()
 	{
+		tempStr1 = new String("");
+		tempStr2 = new String("");
+		tempStr3 = new String("");
 		
 		m_names = new ArrayList<Name>();
 		m_numbers = new ArrayList<PhoneNumber>();
@@ -21,6 +27,10 @@ public class Person {
 	}
 	public Person(Person person) 
 	{
+		tempStr1 = new String("");
+		tempStr2 = new String("");
+		tempStr3 = new String("");
+		
 		m_names = person.m_names;
 		m_numbers = person.m_numbers;
 		m_addresses = person.m_addresses;
@@ -29,6 +39,7 @@ public class Person {
 	//========================
 	public ArrayList<Name> getSortedNames()
 	{
+		
 		ArrayList<Name> sorted = new ArrayList<Name>();
 		boolean inserted = false;
 		
@@ -74,6 +85,13 @@ public class Person {
 	{
 		m_addresses.remove(addr);
 	}	
+	
+	public ArrayList<PhoneNumber> getNumbers() {
+		return m_numbers;
+	}
+	public void setNumbers(ArrayList<PhoneNumber> m_numbers) {
+		this.m_numbers = m_numbers;
+	}
 	//public abstract float match(Person person);
 	
 }

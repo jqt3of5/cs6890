@@ -1,39 +1,133 @@
 package cs6890.skillbuilder;
 
-import annotations.*;
-import structures.*;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
 import java.util.Hashtable;
 
+import javax.crypto.Cipher;
+import javax.crypto.IllegalBlockSizeException;
+import javax.crypto.KeyGenerator;
+import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SealedObject;
+import javax.crypto.SecretKey;
+
+import annotations.*;
+import structures.*;
 
 public aspect EncryptField {
 
 	pointcut encrypt(Object obj) : set (@Encrypt * Person+.*) && args(obj);
 	pointcut decrypt() : get (@Encrypt  * Person+.*);
-	pointcut getter() : withincode(* Person+.get*(..));
-	pointcut setter() : withincode(* Person+.set*(..));
+
+	Hashtable<String, SealedObject> Person.encryptedObjects;
 	
-	Hashtable<String, SealedObject> Person.encryptedObjects = new Hashtable<String, SealedObject>();
-	
-	private static String key = "abcdefg";
-	
-	void around(Object obj) : encrypt(obj)
+	private SecretKey key;
+	private Cipher cipher;
+
+	before() : execution(* Main.main(..))
 	{
-		String name = thisJoinPoint.toShortString();
-		name = name.substring(4, name.length()-2);
+	
+		ObjectInputStream inputStream;
+		try {
+			inputStream = new ObjectInputStream(new FileInputStream("key.des"));
+			key = (SecretKey) inputStream.readObject();
 		
-		((Person)thisJoinPoint.getThis()).encryptedObjects.put(name, new SealedObject(obj, cipher));
+		} catch (FileNotFoundException e1) {
+			
+			try {		
+				key = KeyGenerator.getInstance("DES").generateKey();	
+			} catch (NoSuchAlgorithmException e) {
+				e.printStackTrace();
+			}
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
-		//proceed(obj);
+		try {
+			cipher = Cipher.getInstance("DES");
+			cipher.init(Cipher.ENCRYPT_MODE, key);
+			
+		} catch (NoSuchPaddingException e) {
+			e.printStackTrace();
+		} catch (InvalidKeyException e) {
+			e.printStackTrace();
+		} catch (NoSuchAlgorithmException e) {
+			e.printStackTrace();
+		}
+
 	}
 	
-	Object around() : decrypt() && within(Person)
+	before() : execution(Person.new(..))
+	{	
+		((Person)thisJoinPoint.getThis()).encryptedObjects = new Hashtable<String, SealedObject>();
+	}
+	
+	after() returning : execution(* Main.main(..))
+	{
+		ObjectOutputStream output;
+		try {
+			output = new ObjectOutputStream(new FileOutputStream("key.des"));
+			output.writeObject(key);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
+	void around(Object obj) : encrypt(obj)// && setter()
 	{
 		String name = thisJoinPoint.toShortString();
-		name = name.substring(4, name.length()-2);
+		name = name.substring(4, name.length()-1);
 		
-		SealedObject sealed = ((Person)thisJoinPoint.getThis()).encryptedObjects.get(name);
-		return sealed.getObject(key);
+		try {
+			((Person)thisJoinPoint.getTarget()).encryptedObjects.put(name, new SealedObject((Serializable) obj, cipher));
+
+			return;
 		
+		} catch (IllegalBlockSizeException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		proceed(obj);
+ 
+	}
+	
+	Object around() : decrypt() //&& getter()
+	{
+		String name = thisJoinPoint.toShortString();
+		name = name.substring(4, name.length()-1);
+		
+		SealedObject sealed = ((Person)thisJoinPoint.getTarget()).encryptedObjects.get(name);
+		
+		try {
+			return sealed.getObject(key);
+		} catch (InvalidKeyException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (NoSuchAlgorithmException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		return proceed();
 	}
 }

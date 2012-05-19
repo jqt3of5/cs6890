@@ -26,7 +26,7 @@ public aspect SerializePeople {
 	
 	private String filename = "peopleDump.dat";
 	
-	public void init()
+	public void initPeople()
 	{
 		
 		Main.people = new ArrayList<Person>();
@@ -71,13 +71,10 @@ public aspect SerializePeople {
         } catch (EOFException ex) {
         	
         } catch (FileNotFoundException e) {
-        	init();
+        	initPeople();
+        } catch (IOException e) {
         	e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

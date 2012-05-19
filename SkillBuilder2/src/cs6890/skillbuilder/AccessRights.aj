@@ -4,17 +4,14 @@ import annotations.Protected;
 
 public aspect AccessRights {
 
-	pointcut writepoint(Object obj) : set(@Protected * Person+.*) && args(obj) && withincode(* Person+.*(..));
-	pointcut readpoint() : get(@Protected  * Person+.*) && withincode(* Person+.*(..));
+	pointcut writepoint(Object obj) : set(@Protected * Person+.*) && args(obj); // && withincode(* Person+.*(..));
+	pointcut readpoint() : get(@Protected  * Person+.*); // && withincode(* Person+.*(..));
 	
 	before() : execution(* Main.main(..))
 	{
-		UserSession.getSession().addPermission("set(Person.m_names)");
-		UserSession.getSession().addPermission("get(Person.m_names)");
-		UserSession.getSession().addPermission("set(Person.m_numbers)");
 		UserSession.getSession().addPermission("get(Person.m_numbers)");
-		UserSession.getSession().addPermission("set(Person.m_addresses)");
-		UserSession.getSession().addPermission("get(Person.m_addresses)");
+		UserSession.getSession().addPermission("set(Person.m_numbers)");
+		
 	}
 	
 	void around(Object obj) : writepoint(obj)

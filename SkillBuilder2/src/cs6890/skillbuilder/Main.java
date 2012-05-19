@@ -12,7 +12,21 @@ public class Main {
 			
 		for (Person person : people)
 		{
+			System.out.println(person.tempStr1);
+			System.out.println(person.tempStr2);
+			System.out.println(person.tempStr3);
+			
 			System.out.println(person.getSortedNames().get(0).getFormattedName());
+			System.out.println(person.getNumbers().get(0).getFormattedNumber());
+			
+			person.tempStr1 = "";
+			person.tempStr2 = "";
+			person.tempStr3 = "";
+			
+			System.out.println(person.tempStr1);
+			System.out.println(person.tempStr2);
+			System.out.println(person.tempStr3);
+			System.out.println("\n");
 		}
 
 	}
