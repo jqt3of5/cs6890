@@ -1,4 +1,4 @@
-package cs6890.skillbuilder;
+package structures;
 
 public class Name {
 	
@@ -34,7 +34,10 @@ public class Name {
 		return getSortName().compareTo(name.getSortName());
 	}
 	
-	///public float match(Name name)
-	
+	@Override public boolean equals(Object number)
+	{
+		return compare((Name) number) == 0;
+	}
+	//public float match(Name name);
 	
 }

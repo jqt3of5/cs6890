@@ -27,6 +27,10 @@ public class PhoneNumber {
 	{
 		return getFormattedNumber().compareTo(number.getFormattedNumber());
 	}
+	@Override public boolean equals(Object number)
+	{
+		return compare((PhoneNumber) number) == 0;
+	}
 	//public float match(PhoneNumber number);
 	
 }

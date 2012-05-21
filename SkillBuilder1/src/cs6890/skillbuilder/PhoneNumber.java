@@ -25,7 +25,7 @@ public class PhoneNumber {
 	}
 	public int compare(PhoneNumber number)
 	{
-		return number.getFormattedNumber().compareTo(number.getFormattedNumber());
+		return getFormattedNumber().compareTo(number.getFormattedNumber());
 	}
 	//public float match(PhoneNumber number);
 	
