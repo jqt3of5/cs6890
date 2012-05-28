@@ -9,10 +9,10 @@ public aspect SkillBuilderAspect {
 	private long start = 0;
 	private long end = 0;
 	private PrintWriter fout = null;
-	pointcut trace() : call (* Person.*(..)) || call (* Patient.*(..)) || call (* EmergencyContact.*(..));
-	pointcut getset() : call (* Person.get*(..) ) || call (* Person.set*(..)) 
-					 || call (* Patient.get*(..) ) || call (* Patient.set*(..))
-					 || call (* EmergencyContact.get*(..) ) || call (* EmergencyContact.set*(..)) ;
+	pointcut trace() : call (* Person+.*(..));// || call (* Patient.*(..)) || call (* EmergencyContact.*(..));
+	pointcut getset() : call (* Person+.get*(..) ) || call (* Person+.set*(..)); 
+					 //|| call (* Patient.get*(..) ) || call (* Patient.set*(..))
+					 //|| call (* EmergencyContact.get*(..) ) || call (* EmergencyContact.set*(..)) ;
 	
 	
 	before() : execution(* *.main(..))

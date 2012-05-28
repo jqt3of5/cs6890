@@ -54,6 +54,10 @@ Entering call(void cs6890.skillbuilder.Person.addPhoneNumber(PhoneNumber))
 
 Exiting call(void cs6890.skillbuilder.Person.addPhoneNumber(PhoneNumber))
 
+Entering call(void cs6890.skillbuilder.Physician.addPatient(Patient))
+
+Exiting call(void cs6890.skillbuilder.Physician.addPatient(Patient))
+
 Entering call(void cs6890.skillbuilder.Patient.addPhysician(Physician))
 
 Exiting call(void cs6890.skillbuilder.Patient.addPhysician(Physician))
@@ -77,6 +81,10 @@ Exiting call(void cs6890.skillbuilder.Patient.addEmergencyContact(Person, String
 Entering call(void cs6890.skillbuilder.Patient.removePhysician(Physician))
 
 Exiting call(void cs6890.skillbuilder.Patient.removePhysician(Physician))
+
+Entering call(void cs6890.skillbuilder.Physician.removePatient(Patient))
+
+Exiting call(void cs6890.skillbuilder.Physician.removePatient(Patient))
 
 Entering call(void cs6890.skillbuilder.Patient.addDiagnosis(Diagnosis))
 

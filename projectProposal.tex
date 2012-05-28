@@ -1,0 +1,44 @@
+\documentclass{article}
+\begin{document}
+
+Project Proposal
+
+\section{Overview}
+
+For this proposal, I have decided to use a project called euclide (source can be found at http://sourceforge.net/projects/jeuclide/). The description from the project web site: ``Euclide is a dynamic geometry application written in Java. It allows creation of geometric shapes lines, points, circles, conics...) and transforms (rotation, symmetry...), which depend each other.`` This project seemed like a good choice, because it is of medium size, and the concept that is implemented is rather simple, and potentially useful. \\
+
+After a cursory inspection of the source code, I was able to identify several very obvious cross cutting concerns. Among these concerns, are several functions that are called many times through out the source code. They are " update " or "refresh " methods that are called at the end of other functions. These will be very easy to roll into an aspect. Several other concerns are tangled into the source code. Most of these are yet to be clearly identified. These will take some effort to un tangle, and roll into an aspect. \\
+
+Added functionality:
+ 
+Some things that I would like to see added to this project are: 
+
+\section{Required Resources}
+There are several resources that I will require for this project:
+\begin{enumerate}
+
+\item Euclide source code - http://sourceforge.net/projects/jeuclide/
+\item Euclide documentation 
+\item Eclipse
+\item AspectJ
+\item FINT - A fan-in analysis plugin for Eclipse
+
+\end{enumerate}
+
+
+\section{Scope of Work}
+These are a few of the tasks that I expect need to be completed:
+
+\begin{enumerate}
+
+  \item Do a somewhat indepth analysis of the source code, in an attempt to discover cross cutting concerns. (1 - 2 hours)
+  \item Untangle each concern  (3 - 4 hours)
+  \item Roll each concern into an aspect (1 - 2 hours)
+  \item Design added functionality that has a cross cutting nature that will fit into the source code (2 - 3 hours)
+  \item Implement the new functionality using aspects. (1 - 2 hours)
+  \item Regression testing (1 hour)
+
+\end{enumerate}
+
+
+\end{document}
