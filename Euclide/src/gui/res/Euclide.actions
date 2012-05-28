@@ -1,0 +1,35 @@
+#new=NewDocAction
+#open=OpenFileAction
+#save=SaveAction
+#saveAs=SaveFileAction
+#exit=ExitAction
+
+#addSheet=AddSheetAction
+#removeSheet=RemoveSheet
+#addLayer=AddLayerAction
+#toggleLayersDialog=ToggleLayersPanelAction
+
+#editMarkerStyle=ChangeMarkerStyleAction
+#editLineStyle=ChangeLineStyleAction
+#editFillStyle=ChangeFillStyleAction
+
+#selectionUp=SelectionUpAction
+#selectionDown=SelectionDownAction
+#selectionTop=SelectionTopAction
+#selectionBottom=SelectionBottomAction
+#selectionDelete=SelectionDeleteAction
+
+#zoomin=ZoomInAction
+#zoomout=ZoomOutAction
+
+#displayDocInfo=DisplayDocInfoAction
+
+#addVectorAdd2Vectors=AddDynamicObjectAction VectorAdd2Vectors2D Class[]{Vector2D Vector2D}
+#addVectorMultiplyVector=AddDynamicObjectAction VectorMultiplyVector2D Class[]{Vector2D Measure2D}
+
+#addTranslationVector=AddTranslationVector2DAction
+#addComposedTransform=AddComposedTransformAction
+
+#addDotProduct2Vectors=AddDynamicObjectAction DotProduct2Vectors2D Class[]{Vector2D Vector2D}
+#addCrossProduct2Vectors=AddDynamicObjectAction CrossProduct2Vectors2D Class[]{Vector2D Vector2D}
+

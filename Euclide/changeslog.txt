@@ -1,0 +1,392 @@
+Change log for Euclide
+
+Euclide 0.6.6 (2012-04-14, rev. 262)
+
+New features
+- added parralel by point, and buffer by point
+- added PolygonEdge2D construction
+- added DomainToPolygon2D construction
+
+GUI
+- fixed position of mouse tooltip when view is scrolled
+- fixed a bug for adding a sheet to a doc
+- addded possibility to snap polygon edge
+- update display when size of sheet is changed
+- updated main frame icon
+- updated menu and toolbar
+
+Code 
+- fixed bug in read/write of constants
+- fixed computation of buffers from boundary curves
+- switched to javaGeom 0.10.2
+
+
+Euclide 0.6.5 (2011-12-04, rev. 250)
+
+New features
+- added difference and exclusive OR of two polygons
+- added inverted ray construction
+- added ellipse by 2 focus and 1 point
+- can now compute area and signed area for any polygon
+
+GUI
+- added a toolbar with icons for most common actions
+- added support for menu accelerators (only few are activated at the moment)
+- added display of document zoom in figure title
+
+Bug fixes
+- fixed display of opened documents
+- many bug fixes due to the new javaGeom library
+
+Code
+- switched to javaGeom-0.10.0
+- created a EuclideFrame class for managing the different windows
+
+
+Euclide 0.6.4 (2011-09.21, rev 232)
+
+New features
+- add hyperlink in "About" Dialog
+- add "Vertical Line" and "Horizontal Line" tools
+
+Code
+- added a new "Version" class for versioning
+- fix dependency bug in manifest
+
+
+Euclide 0.6.3 (2011-09-12, rev 227)
+
+New features
+- new constructions:
+    + union and intersection of polygons
+    + complement of a domain
+    + rectangle by two corners
+- added support for left-right triangle grids
+
+Regressions
+- temporarily remove management of length units until they are better managed
+
+Bug fixes
+- fix bug in saving layers tag
+- update sheet name when modified
+- cleanup style edition panel
+- cleanup constants and measures management
+- fix construction update order
+     
+Code
+- switched to javaGeom-0.9.0
+
+
+Euclide 0.6.2 (2010-05-13, rev. 210)
+
+New features
+- new shapes: regular polygon by center, vertex or apothem, and vertex number
+- new tools to apply recursively a transform to a shape, and to apply several
+	rotations
+- added display of dependence tree of constructions
+- better style support
+	+ can now specify marker size and line width either as pixel (default) or as
+		user unit
+	+ can use marker with arbitrary big sizes
+- added list of open files in Files menu, giving possibility to switch between
+	open documents	
+	
+Bug fixes
+- Fix bugs in Ellipse by 2 foci and vertex of polygon by index
+- save and read line visibility style
+
+Code
+- lot of code rewriting for DGF files reading/writing
+- rewrote management of styles
+- rewrite management of application colors
+- enhanced marker style
+- switched to javaGeom 0.8.1
+- better support of tags
+- splitted EuclideDoc class into EuclideDoc and DynamicObjectsManager classes
+
+
+Euclide 0.6.1 (2010-02-13, rev. 190)
+
+New features
+- added support for unary and binary operators on measures
+- added "visible" flag to line styles (feature request #2867463)
+- it is now possible to specify line join style and end cap style
+- added supporting line and circles of arcs and linear shapes
+- added GeodesicPointsOnCurve2D
+
+GUI
+- most dialogs now display in the center of the main frame
+- updated icons, added icons for menus
+- main frame does not display on screen corner anymore
+- it is now possible to snap to a point in a point set
+
+Bug fixes
+- fixed intersection of circle arcs (feature request #2867472)
+- fixed snap of polygons (bug #2867457), and PointOnBoundary2D.
+- grid information is now correctly saved and read
+- fixed bug in PolygonVertex2D
+
+Code
+- simplified draw style management
+- draw style are now saved only if they differ from doc style
+- move DGF reader and writer to io/dgf package
+- save euclide version in dgf files
+
+
+Euclide 0.6.0 (2009-09-10, rev. 166)
+
+New features
+- added macros management:
+	+ create simple macro from several shape as input, and a single shape as
+		output
+	+ run a macro by specifying inputs and macro name
+- added TangentVectorCurvePosition2D, PolygonCentroid, Curve from Curve set
+- added buffer of circulinear shapes
+- added extraction of curve from a set of curve by its index
+
+Bug fixes
+- fixed computation of parallel curves
+- fixed bug in poly smooth curve from N curves
+
+GUI:
+- added new icons in menu
+- added support for line styles
+- updated sheet layers panel
+- fixed bug in closing main frame (do not close if there are still open docs)
+- style dialogs are now centered
+- fixed moving of some movable points (bi-points, point dependent on other
+    point...)
+   
+Code:
+- update saving doc
+- better suport of document events
+- switched to javaGeom 0.8.0
+
+
+Euclide 0.5.3 (2009-08-04, rev. 153)
+
+New features:
+- new constructions
+    + closed polyline by N points
+    + conversions from point set to polygon, polyline, or closed polyline
+    + rotation by center and angle
+    + curve locus
+    + shape name label
+- can export and import sets of points to/from CSV files
+- added a tool for printing shape info
+- It is now possible to move a shape that depends only on free points
+
+GUI:
+- added icon management, with some icons for menu
+- enhanced zoom management
+
+I/O:
+- coordinates of free points are rounded to avoid display of irrelevant digits
+
+Code:
+- separate classe EuclideGui and EuclideMainFrame
+- free points are now implemented as a FreePoint2D class
+- introduced 'dot-per-user unit', for relation between user unit and pixels to
+	display
+
+Bug fixes:
+- fixed bug in tangent computation of polylines
+- fixed bug orthogonal circle
+- correct save of StringLabel2D
+- panel of measure list refers to correct doc.
+
+
+Euclide 0.5.2 (2009-04-24, rev. 134)
+
+New features:
+- new constructions:
+	+ added Convex hull of a point set and an array of points
+	+ added Parallel Curve
+	+ added conic by 5 points
+	+ added singular points of a curve
+	+ foci of a conic
+	+ length of a curve (approximated)
+	+ isBounded and isEmpty predicates
+- tangents, curvature and osculating circle can now be constructed on curve sets
+- added StringLabel
+- impleted clear locus action
+
+GUI:
+- added support for Tooltip in menu
+- fixed display bugs
+
+Code:
+- switched to javaGeom 0.7.1
+
+
+Euclide 0.5.1 (2008/12/22, rev. 117)
+
+New features:
+- new constructions:
+	+ boundary set from several boundaries
+	+ boundary of a domain
+	+ polygon vertices
+- added grid management
+- added scaling transforms (by measure, or by 2 points)
+- added measure of winding angle 
+- added management of Counting measures, and some measures:
+	+ number of vertices of a polygon
+	+ size of a point set
+
+GUI:
+- new possibilities for picking points:
+	+ intersections of 2 lines
+	+ intersections of 2 circles
+	+ intersection of a line and a circle
+	+ intersection of a line and a curve, given by index
+	+ polygon single vertex, polygon vertices, polyline vertices	
+- free point tool can now add point on objects and intersections
+- added preview of shapes created with several points
+- check if files are saved when exiting
+- better support of multi document
+
+Bug fixes:
+- better control on names of layers
+- fixed bug in moving free points
+- fixed bug in circle arc from center and 2 points
+- fixed bug in point on circle arcs
+- fixed clipping of polygons
+- fixed clipping of labels
+- fixed snapping of selection
+
+Code:
+- uses the javaGeom 0.6.2 library
+- code cleanup: replace 'Element' by 'Shape'.
+- put resource files into /src directory, updated labels and instructions
+
+
+Euclide 0.5.0 (2008/04/24, rev. 105)
+
+New features:
+- display is now based on user coordinate, not on page coordinate (better for
+	geometric drawings)
+- added management of drawing styles (different styes for marker, line, and
+	fill)
+- added preview of newly created shapes, and of created points
+- added possibility to change current layer of selected shapes
+- added creation of new shapes:
+	+ convert curve to domain
+	+ point on domain boundary
+	+ BiPoint
+	+ Tangent line for smooth curve
+	
+Bug fixes:
+- Fixed bug in loading and saving shapes based on multiple shapes (like
+	polygons or polylines)
+- Removed shapes with too much bugs
+- Enhanced control on measure units
+- fixed bug in Point On Curve, Perpendicular Line
+- fixed bug in saving and reading of several shapes:
+	+ Intersection Line and Circle
+	+ Point On Curve
+	+ Point Relative to Point
+
+Code:
+- Tools and Actions are now loaded by a special class, not loaded from config
+	file (this should make app start faster, especially for applets)
+- separate EuclideSheetView and EuclideSheetDisplay (which can be used
+	independently)
+- introduced EuclideObject, base of all elements manipulated by the user
+	(shapes, vectors, transforms and predicates). Each EuclideObject contains a
+	tag, making its identification easier
+- EuclideGui now manages a list of panels and dialogs, identified by a key.
+	Each dialog or panel is now created only once.
+- New shapes are now created by the EuclideGui class
+
+
+	
+Euclide 0.4.0 (2008/04/05, rev. 83)
+
+New features:
+- added manipulation of vectors:
+	- create vector from 2 points
+	- add two vectors, multiply a vector by a measure
+	- dot product and cross product of vectors
+	- create translation from a vector
+- added new constructions using result of predicates:
+	- Tangent 2 circles (replaces the 4 previous equivalent tools)
+	- Circle arc (replaces circle are direct and circle arc indirect)
+	- Bisector of 2 lines (replaces the 2 previous equivalent tools)
+- added new constructions:
+	- Straight Line from point and angle
+	- measure of point power (with respect to a circle)
+- added a dialog to setup sheet name and dimension
+- added About dialog
+- added possibility to choose unit of angle measures
+	
+Bug fixes:
+- Added more tools and actions labels and instructions
+- fixed saving and reading (all elements are now correctly written and loaded,
+	not only the ones needed to display shapes, and names are saved)
+- fixed display of PointLocus2D
+- fixed constants were not defined to true
+
+dev:
+- changed DynamicObject2D to abstract class, which simplifies implementation
+- added the generic action class 'addDynamicObjectAction', allowing action
+	labels and instructions to be stored in property files.
+- renamed EuclideFrame to EuclideGui, and created class GuiBuilder
+- Uses javaGeom 0.6.0 (new package organisation)
+
+
+Euclide 0.3.2 (2008/01/20, rev. 66)
+
+New features:
+- Added composition of affine transforms
+- Layers can be deleted, and order changed
+- New documents can be created
+- Shapes can now be deleted, with all objects depending on them
+- Added a text over mouse cursor to help identify current selected shape
+
+Bug Fixes:
+- fix bug: point relative to another point could not be moved
+- Fix bug in intersection line/circle
+- Fix bug: save dialog appeared like open dialog
+- Fix bug in saving some shapes (intersection line/circle, tangents 2 circles)
+
+dev:
+- Separate config files for menu and labels
+- Improve implementation of dependencies
+- Event-Listener architecture for appli
+- Uses javaGeom 0.5.2
+
+
+Euclide 0.3.1 (2007/11/28, rev. 46)
+
+- Add new figures: Osculating circle, Parabolas, Hyperbola 3 Points
+- Introduce predicates, wich return a boolean result
+- Add possibility to change position of shapes on layers
+- Display some information on the document
+- Add possibility to save in the same file as last save
+- Reorganize menu
+- Code rewriting: more support of generics, Event-Listener architecture for data
+- Uses javaGeom 0.5.0
+
+
+Euclide 0.3.0 (2007/05/20, rev. 36)
+
+- Add support for writing and loading dynamic geometric files in Euclide 'DGF' Format.
+- change implementation of Dynamic shape, to be more general. This allows for example
+	to transform any type of shape.
+- Add dynamic shapes: reverse curve, curve as polyline, osculating circle, and
+	sub curve delimited by 2 points
+- Update measure labels
+- Add support for several drawing options (in saved files): line and fill
+	color and transparency, line cap and join styles, marker type...
+- Better support of clipping shapes
+
+
+Euclide 0.2.1 (2007/04/22, rev. 21)
+
+- Add measure of positive and signed area of a polygon
+- Add Square and Equilateral triangle from 2 points
+- Add Bounding box of a curve
+- Update display process to have better support for domains
+- Change Menubar layout
+- Update labels and instructions for labels and instructions
+

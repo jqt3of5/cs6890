@@ -1,0 +1,12 @@
+<document>
+
+  <dynamics>
+  </dynamics>
+  
+  <sheets>
+    <sheet name="sheet 1">
+      <layer name="layer 1">
+      </layer>
+    </sheet>
+  </sheets>
+</document>

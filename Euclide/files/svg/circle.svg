@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg     xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="200.000000mm" height="200.000000mm"    viewBox="-10.000000 -10.000000 20.000000 20.000000"
+>
+  <g fill="Red" stroke="Black" stroke-width="0.1">
+    <circle cx="-5.700000" cy="6.100000" r="0.050000"/>
+  </g>
+  <g fill="Red" stroke="Black" stroke-width="0.1">
+    <circle cx="-7.200000" cy="1.300000" r="0.050000"/>
+  </g>
+  <g fill="Red" stroke="Black" stroke-width="0.1">
+    <circle cx="1.100000" cy="-2.400000" r="0.050000"/>
+  </g>
+  <g fill="none" stroke="Blue" stroke-width="0.02">
+    <circle cx="-1.802809" cy="2.247753" r="5.479772"/>
+  </g>
+  <g fill="Red" stroke="Black" stroke-width="0.1">
+    <circle cx="6.700000" cy="3.000000" r="0.050000"/>
+  </g>
+  <g fill="Red" stroke="Black" stroke-width="0.1">
+    <circle cx="1.800000" cy="1.700000" r="0.050000"/>
+  </g>
+  <g fill="Red" stroke="Black" stroke-width="0.1">
+    <circle cx="4.000000" cy="-6.500000" r="0.050000"/>
+  </g>
+  <g fill="none" stroke="Blue" stroke-width="0.02">
+    <circle cx="5.336757" cy="-1.746236" r="4.938136"/>
+  </g>
+  <g fill="Red" stroke="Black" stroke-width="0.1">
+    <circle cx="-7.400000" cy="-7.600000" r="0.050000"/>
+  </g>
+  <g fill="Red" stroke="Black" stroke-width="0.1">
+    <circle cx="-3.200000" cy="-0.500000" r="0.050000"/>
+  </g>
+  <g fill="Red" stroke="Black" stroke-width="0.1">
+    <circle cx="5.300000" cy="-8.300000" r="0.050000"/>
+  </g>
+  <g fill="none" stroke="Blue" stroke-width="0.02">
+    <circle cx="-0.976023" cy="-6.607846" r="6.500142"/>
+  </g>
+</svg>
+

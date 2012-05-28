@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg     xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="200mm" height="200mm"    viewBox="-100 -100 200 200"
+>
+
+  <!-- Montre le contour du canevas avec un élément 'rect' -->
+  <rect x="-99" y="-99" width="198" height="198"
+        fill="none" stroke="blue" stroke-width="1"/>
+
+          <g fill="Red" stroke="Black" stroke-width="1">
+    <circle x="5" y="4" r="0.05"/>
+  </g>
+ 
+</svg>
+

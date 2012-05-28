@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg     xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="-10 -10 20 20"
+    width="20cm" height="20cm">
+    
+  <rect x="-9.0" y="-9.9" width="19" height = "19.8"
+      fill="none" stroke="black" stroke-width="0.1px" />
+      
+  <g fill="Red" stroke="Black" stroke-width="1.0px">
+    <circle x="-9" y="9" r="3"/>
+  </g>
+  <g fill="Red" stroke="Black" stroke-width="1.0px">
+    <circle x="6.062500" y="9.343750" r="3.000000px"/>
+  </g>
+  <g fill="Red" stroke="Black" stroke-width="1.0px">
+    <circle x="6.937500" y="8.656250" r="3.000000px"/>
+  </g>
+  <g fill="Red" stroke="Black" stroke-width="1.0px">
+    <circle x="7.562500" y="8.093750" r="3.000000px"/>
+  </g>
+  <g fill="Red" stroke="Black" stroke-width="1.0px">
+    <circle x="8.500000" y="7.406250" r="3.000000px"/>
+  </g>
+  <g fill="Red" stroke="Black" stroke-width="1.0px">
+    <circle x="9.437500" y="6.156250" r="3.000000px"/>
+  </g>
+</svg>
+

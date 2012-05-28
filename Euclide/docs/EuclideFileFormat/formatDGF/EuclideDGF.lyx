@@ -1,0 +1,437 @@
+#LyX 1.4.3-5 created this file. For more info see http://www.lyx.org/
+\lyxformat 245
+\begin_document
+\begin_header
+\textclass article
+\language english
+\inputencoding auto
+\fontscheme default
+\graphics default
+\paperfontsize default
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Format de fichier pour Euclide
+\end_layout
+
+\begin_layout Section
+Général
+\end_layout
+
+\begin_layout Standard
+Format de stockage de fichier contenant des primitives geometriques en dependanc
+e les unes avec les autres, ainsi que des règles d'affichage de ces primitives.
+\end_layout
+
+\begin_layout Standard
+Fichie organisé en 'tags'.
+ Chaque ligne du fichier est organisée sous le format 
+\begin_inset Quotes eld
+\end_inset
+
+[tag]=[definition du tag]
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Document
+\end_layout
+
+\begin_layout Standard
+Un document contient plusieurs feuilles, et des objets géométriques (mesures,
+ transformations...).
+ Il contient aussi des meta-informations, comme le nom du document ou de
+ l'auteur, la date...
+ Le nom du tag pour les documents est imposé : 'doc'.
+ 
+\end_layout
+
+\begin_layout Subsection
+Tags de base
+\end_layout
+
+\begin_layout Description
+docSheets les tags des différentes feuilles dans le document
+\end_layout
+
+\begin_layout Description
+docMeasures les tags des différentes mesures
+\end_layout
+
+\begin_layout Description
+docTransforms les tags des différentes transformations
+\end_layout
+
+\begin_layout Description
+docVectors les vecteurs stockés dans le doc
+\end_layout
+
+\begin_layout Standard
+Tags pour affichage ou impression
+\end_layout
+
+\begin_layout Subsection
+Tags de meta informations
+\end_layout
+
+\begin_layout Description
+docName le nom du document
+\end_layout
+
+\begin_layout Description
+docAuthor le nom de l'auteur du document
+\end_layout
+
+\begin_layout Description
+docCreation la date de création du document (date de la première sauvegarde),
+ en tant que chaîne de caractères pour le moment
+\end_layout
+
+\begin_layout Section
+Feuilles
+\end_layout
+
+\begin_layout Standard
+Une feuille est définie par un nom, et par une série de calques.
+\end_layout
+
+\begin_layout Subsection
+Tags requis
+\end_layout
+
+\begin_layout Description
+[sheetTag]Layers une série de tags pour les calques contenus dans cette
+ feuille
+\end_layout
+
+\begin_layout Description
+[sheetTag]Page une suite de 4 valeurs numériques [x y width height] contenant
+ les dimensions de la feuille
+\end_layout
+
+\begin_layout Subsection
+Tags optionnels
+\end_layout
+
+\begin_layout Description
+[sheetTag]View une suite de 4 valeurs numériques [x y width height] contenant
+ les dimensions préférentielles pour afficher la feuille (par défault, la
+ taille de la feuille).
+\end_layout
+
+\begin_layout Section
+Calques
+\end_layout
+
+\begin_layout Subsection
+Tags requis
+\end_layout
+
+\begin_layout Description
+[layerTag]shapes une série de tag pour les figures contenues dans cette
+ feuille
+\end_layout
+
+\begin_layout Subsection
+Tags optionnels
+\end_layout
+
+\begin_layout Description
+[layerTag]Visible indicateur de visibilité du calque (défaut : vrai)
+\end_layout
+
+\begin_layout Description
+[layerTag]Edit indicateur de possibilité d'édition du calque (défaut : vrai)
+\end_layout
+
+\begin_layout Section
+Figures
+\end_layout
+
+\begin_layout Standard
+Note: pour le moment, chaque tag reference à la fois la figure et son affichage.
+ On pourrait séparer les choses, de manière à pouvoir représenter une même
+ forme dans différents calques et/ou avec différents styles.
+\end_layout
+
+\begin_layout Subsection
+Tags obligatoires
+\end_layout
+
+\begin_layout Description
+[shapeTag]Geometry le tag correspondant à la géométrie créée.
+\end_layout
+
+\begin_layout Subsection
+Tags optionnels
+\end_layout
+
+\begin_layout Standard
+Pour spécifier l'affichage des figures.
+ Pour les marqueurs, le tracé et le remplissage du marqueur est spécifié
+ par les attributs 
+\begin_inset Quotes eld
+\end_inset
+
+LineXXX
+\begin_inset Quotes erd
+\end_inset
+
+ et 
+\begin_inset Quotes eld
+\end_inset
+
+FillXXX
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Changer 
+\begin_inset Quotes eld
+\end_inset
+
+XXXAlpha
+\begin_inset Quotes erd
+\end_inset
+
+ par 
+\begin_inset Quotes eld
+\end_inset
+
+XXXTransparency
+\begin_inset Quotes erd
+\end_inset
+
+ ?
+\end_layout
+
+\begin_layout Description
+[shapeTag]MarkerType le type de point : rond, carré, croix...
+\end_layout
+
+\begin_layout Description
+[shapeTag]MarkerSize la taille du point (rayon du cercle, côté du carré...)
+\end_layout
+
+\begin_layout Description
+[shapeTag]LineColor la couleur de la courbe
+\end_layout
+
+\begin_layout Description
+[shapeTag]LineAlpha la transparence de la couleur
+\end_layout
+
+\begin_layout Description
+[shapeTag]LineWidth épaisseur de la courbe
+\end_layout
+
+\begin_layout Description
+[shapeTag]LineCap type des bouts de courbe.
+ Peut être : 
+\begin_inset Quotes eld
+\end_inset
+
+ROUND
+\begin_inset Quotes erd
+\end_inset
+
+ (défaut), 
+\begin_inset Quotes eld
+\end_inset
+
+SQUARE
+\begin_inset Quotes erd
+\end_inset
+
+ ou 
+\begin_inset Quotes eld
+\end_inset
+
+BUTT
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+[shapeTag]LineJoin jonction entre les segments.
+ Peut être : 
+\begin_inset Quotes eld
+\end_inset
+
+BEVEL
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+MITER
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+ROUND
+\begin_inset Quotes erd
+\end_inset
+
+ (défaut)
+\end_layout
+
+\begin_layout Description
+[shapeTag]FillColor la couleur de remplissage
+\end_layout
+
+\begin_layout Description
+[shapeTag]FillAlpha la transparence du remplissage
+\end_layout
+
+\begin_layout Subsection
+Types de markers
+\end_layout
+
+\begin_layout Standard
+Un marqueur peut être dessiné selon différents types.
+ Chaque type peut être agrandi en fonction de la taille (
+\begin_inset Quotes eld
+\end_inset
+
+MarkerSize
+\begin_inset Quotes erd
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Description
+round un disque de diamètre 
+\begin_inset Quotes eld
+\end_inset
+
+MarkerSize
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+plus une croix (deux traits orthogonaux), de longueurs 
+\begin_inset Quotes eld
+\end_inset
+
+MarkerSize
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+times une croix (deux traits diagonaux), de longueurs 
+\begin_inset Quotes eld
+\end_inset
+
+MarkerSize
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+square un carré, de côté (ou diagonale ?) 
+\begin_inset Quotes eld
+\end_inset
+
+MarkerSize
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+diamond un carré en diagonal, de côté (ou diagonale ?) 
+\begin_inset Quotes eld
+\end_inset
+
+MarkerSize
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Tags de style
+\end_layout
+
+\begin_layout Standard
+Ils reprennent plusieurs spécification de style, et peuvent être référencés
+ par plusieurs figures.
+ Cela permet de modifier le style d'affichage de plusieurs figures semblables.
+\end_layout
+
+\begin_layout Description
+[shapeTag]markerStyle
+\end_layout
+
+\begin_layout Description
+[shapeTag]lineStyle
+\end_layout
+
+\begin_layout Description
+[shapeTag]fillStyle
+\end_layout
+
+\begin_layout Section
+Objets géométriques
+\end_layout
+
+\begin_layout Description
+[objectTag] une ligne de texte permettant de reconstruire la forme.
+ La ligne de texte suit le format : 
+\begin_inset Quotes eld
+\end_inset
+
+[Class param1 param2 ...]
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Le terme [Class] est une classe héritant de Shape2D, Measure2D ou Transform2D,
+ et doit pouvoir être chargée dynamiquement à partir des paramètres donnés.
+ Les paramètres sont soit des tags faisant référence à d'autres formes,
+ à des mesures ou des transformations, ou alors des valeurs fixes (constantes
+ numériques, ou les chaînes true ou false).
+\end_layout
+
+\end_body
+\end_document

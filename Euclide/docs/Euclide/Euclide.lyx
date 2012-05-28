@@ -1,0 +1,708 @@
+#LyX 1.4.3-5 created this file. For more info see http://www.lyx.org/
+\lyxformat 245
+\begin_document
+\begin_header
+\textclass article
+\language english
+\inputencoding auto
+\fontscheme default
+\graphics default
+\paperfontsize default
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Euclide
+\end_layout
+
+\begin_layout Standard
+The aim of this project id to build a software dedicated to the manipulation
+ of geometric primitives in the plane.
+ If software already exist (Cabri, Geonext, Geoplan), they are limited to
+ very basic primitives.
+ The goal of Euclide is to provide a wide range of primitives, the possibility
+ to compose them, with the ease of traditional vector-design software.
+\end_layout
+
+\begin_layout Section
+Primitives
+\end_layout
+
+\begin_layout Subsection
+Numerical values
+\end_layout
+
+\begin_layout Standard
+They are not primitives, but they are widely used to define other primitives.
+ Values used can be user-defined values, results of measures on primitives
+ (distance between 2 points, length of a curve, angle between 2 lines, area
+ of a polygon...), or the result of a computation using other values.
+ 
+\end_layout
+
+\begin_layout Standard
+Different types of values are\InsetSpace ~
+:
+\end_layout
+
+\begin_layout Enumerate
+Constants (user-defined values)
+\end_layout
+
+\begin_layout Enumerate
+Measures of distance (between 2 points, 2 circles...)
+\end_layout
+
+\begin_layout Enumerate
+Measures of angle (of a line, between 2 lines, of a corner...)
+\end_layout
+
+\begin_layout Enumerate
+Measures of area
+\end_layout
+
+\begin_layout Enumerate
+Counting measures (number of vertices, number of intersections...)
+\end_layout
+
+\begin_layout Enumerate
+Computations
+\end_layout
+
+\begin_layout Standard
+To define a measure, several information are needed:
+\end_layout
+
+\begin_layout Itemize
+the value itself,
+\end_layout
+
+\begin_layout Itemize
+the unit
+\end_layout
+
+\begin_layout Standard
+Unit can belong to distance unit, angle unit...
+ Unit can be represented in full form (ex: 
+\begin_inset Quotes eld
+\end_inset
+
+millimeters
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+degrees
+\begin_inset Quotes erd
+\end_inset
+
+), or in abbreviated form (
+\begin_inset Quotes eld
+\end_inset
+
+mm
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+deg
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+°
+\begin_inset Quotes erd
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsection
+Point
+\end_layout
+
+\begin_layout Standard
+A point is given by 2 coordinates.
+ We can distinguish 3 kinds of points.
+\end_layout
+
+\begin_layout Subsubsection
+Free point 
+\end_layout
+
+\begin_layout Standard
+Free point can be freely moved.
+ They are the basis for building other primitives.
+\end_layout
+
+\begin_layout Subsubsection
+Point on object
+\end_layout
+
+\begin_layout Standard
+These points can move, but their positions are restricted such that they
+ located on a given object, usually a curve.
+ We can also consider points restricted to be located inside a given area.
+\end_layout
+
+\begin_layout Standard
+To implement it, a solution is to keep both the source point and the restricting
+ object, then projecing the source point on the restricting object, to deduce
+ position of resulting point.
+\end_layout
+
+\begin_layout Subsubsection
+Result point
+\end_layout
+
+\begin_layout Standard
+These points are the result of geometric constructions, for example the
+ intersection of 2 lines, or the intersection of 2 circles.
+ They can not be moved by themselves, but if the position of their parents
+ changes, their position changes accordingly.
+ Note that for some construction, several points can result (ex: intersection
+ of 2 circles).
+ In this case, it is necessary to find an order for the points.
+\end_layout
+
+\begin_layout Subsubsection
+Twin points
+\end_layout
+
+\begin_layout Standard
+It is sometimes necessary to consider 2 points, such that the motion of
+ one is repercuted on the other.
+ For example, control points of a Bezier curve.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Standard
+I still do not know how to handle this...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Straight objects
+\end_layout
+
+\begin_layout Standard
+A straight object is supported by a straight line.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Straight lines
+\end_layout
+
+\begin_layout Standard
+The straight line is represented using parametric equations
+\begin_inset Formula \begin{eqnarray*}
+x(t) & = & x_{0}+dx\, t\\
+y(t) & = & y_{0}+dy\, t\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For a straight line, 
+\begin_inset Formula $t$
+\end_inset
+
+ belongs to the whole interval 
+\begin_inset Formula $[t_{0};t_{1}]=[-\infty;+\infty]$
+\end_inset
+
+.
+ Different straight objects can be described using different values for
+ 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Line segment
+\end_layout
+
+\begin_layout Standard
+Values are : 
+\begin_inset Formula $t_{0}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $t_{1}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Rays
+\end_layout
+
+\begin_layout Standard
+The value for 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ can be arbitrary chosen, usually it is 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ The value of 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ is 
+\begin_inset Formula $+\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Line arcs
+\end_layout
+
+\begin_layout Standard
+Values for 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ are specified by user.
+\end_layout
+
+\begin_layout Subsection
+Circles and arcs
+\end_layout
+
+\begin_layout Subsection
+Conics
+\end_layout
+
+\begin_layout Subsection
+Polygon and Polyline
+\end_layout
+
+\begin_layout Subsection
+Compound shapes
+\end_layout
+
+\begin_layout Section
+Primitives compositions
+\end_layout
+
+\begin_layout Standard
+This section focusses on the different ways to create a geometric shape
+ depending on other primitives.
+\end_layout
+
+\begin_layout Subsection
+Points
+\end_layout
+
+\begin_layout Subsubsection
+Given coordinates
+\end_layout
+
+\begin_layout Standard
+For a free point, coordinate are given as constant, and can be freely modified.
+ But it is possible to create point whose coordinate are either measures
+ or the result of computations.
+\end_layout
+
+\begin_layout Subsubsection
+Intersection of 2 lines
+\end_layout
+
+\begin_layout Subsubsection
+Centroid
+\end_layout
+
+\begin_layout Standard
+The centroid of a set of points is easily obtained by computing the average
+ of every coordinate.
+ For a weighted centroid, it suffices to compute to weighted average of
+ coordinate.
+ In the case of the non weighted centroid of 2 points, we obtain the middle
+ of the points.
+\end_layout
+
+\begin_layout Subsubsection
+Intersection 2 circles
+\end_layout
+
+\begin_layout Subsubsection
+Intersection line and circle
+\end_layout
+
+\begin_layout Subsection
+Lines
+\end_layout
+
+\begin_layout Subsubsection
+By 1 or 2 points
+\end_layout
+
+\begin_layout Standard
+one point : specify angle, or angle of another line.
+\end_layout
+
+\begin_layout Standard
+For two points : the line contains both points, 
+\end_layout
+
+\begin_layout Subsubsection
+Parallel line
+\end_layout
+
+\begin_layout Subsubsection
+Perpendicular line
+\end_layout
+
+\begin_layout Subsubsection
+Bisector
+\end_layout
+
+\begin_layout Subsubsection
+Tangent to circle
+\end_layout
+
+\begin_layout Subsection
+Circles
+\end_layout
+
+\begin_layout Subsubsection
+By center and radius
+\end_layout
+
+\begin_layout Standard
+Center is a point, radius can be a measure.
+\end_layout
+
+\begin_layout Subsubsection
+By 2 points
+\end_layout
+
+\begin_layout Standard
+The first point is the center, the second point belongs to the circle and
+ gives the radius.
+\end_layout
+
+\begin_layout Subsubsection
+By 3 points
+\end_layout
+
+\begin_layout Standard
+The 3 points belong to the circle.
+\end_layout
+
+\begin_layout Subsection
+Transforms
+\end_layout
+
+\begin_layout Subsubsection
+Translation
+\end_layout
+
+\begin_layout Standard
+Translation given by a vector, or by two points
+\end_layout
+
+\begin_layout Subsubsection
+Rotation
+\end_layout
+
+\begin_layout Standard
+Rotation given by a center, and an angle.
+\end_layout
+
+\begin_layout Subsubsection
+Point symmetry
+\end_layout
+
+\begin_layout Standard
+A base point, which is the symmetry center
+\end_layout
+
+\begin_layout Subsubsection
+Line symmetry
+\end_layout
+
+\begin_layout Standard
+a reference line.
+\end_layout
+
+\begin_layout Subsubsection
+Circle inversion
+\end_layout
+
+\begin_layout Standard
+Given by a circle.
+ This is one of the rare transforms which is not an affine transform.
+\end_layout
+
+\begin_layout Section
+Class hierarchy
+\end_layout
+
+\begin_layout Section
+Document architecture
+\end_layout
+
+\begin_layout Subsection
+Global Items
+\end_layout
+
+\begin_layout Standard
+Some transforms, styles, and measures.
+ Measures can be constants.
+\end_layout
+
+\begin_layout Subsection
+Sheet
+\end_layout
+
+\begin_layout Standard
+A document contains several sheets.
+ Each sheet has its own dimension (finite, or possibly infinite).
+ Each sheet contains several layers.
+\end_layout
+
+\begin_layout Subsection
+Layer
+\end_layout
+
+\begin_layout Standard
+A layer is a collection of geometric elements.
+ 
+\end_layout
+
+\begin_layout Subsection
+Element
+\end_layout
+
+\begin_layout Standard
+An element is described by its geometry (point, circle are, polygon, compound
+ shape...), and by the styles used to draw its interior, boundary, and vertices.
+\end_layout
+
+\begin_layout Standard
+Moreover, the relative position of the shape should be stored.
+ It is dependent on the element, not on the layer.
+ The method to store this position has to be specified.
+\end_layout
+
+\begin_layout Subsection
+Geometry
+\end_layout
+
+\begin_layout Standard
+The geometry describes the shape of the element.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Point
+\end_layout
+
+\begin_layout Subsubsection
+Curve
+\end_layout
+
+\begin_layout Subsubsection
+Figure
+\end_layout
+
+\begin_layout Subsubsection
+Image
+\end_layout
+
+\begin_layout Subsubsection
+Text/Label
+\end_layout
+
+\begin_layout Subsection
+Point style
+\end_layout
+
+\begin_layout Standard
+A point can be drawn in several ways.
+ A basic one is to draw a point as a ball with a given color, and a fixed
+ size.
+\end_layout
+
+\begin_layout Standard
+Possibility to have size of point relative to zoom ?
+\end_layout
+
+\begin_layout Standard
+Possible implementation : each point has a pointer to a shape, and draws
+ the shape trnaslated to the point.
+\end_layout
+
+\begin_layout Subsection
+Stroke style
+\end_layout
+
+\begin_layout Standard
+There are several points to consider.
+ Obviously, we have to manage color and width of the stroke.
+ The behaviour of the stroke at corners and at endings must also be specified.
+ Finally, each extremity can be decorated with an arrow or something else.
+ 
+\end_layout
+
+\begin_layout Standard
+Possibility to use variable size strokes ? 
+\end_layout
+
+\begin_layout Standard
+Possibility to compose strokes together to create/design new strokes ? Ex
+ : a stroke which draws points with a certain style.
+\end_layout
+
+\begin_layout Subsection
+Fill style
+\end_layout
+
+\begin_layout Standard
+Java provides several 'Paint' : Color, Gradient, Image.
+ 
+\end_layout
+
+\begin_layout Subsection
+Text style
+\end_layout
+
+\begin_layout Standard
+font, bold, italic, ....
+\end_layout
+
+\begin_layout Standard
+text orientation
+\end_layout
+
+\begin_layout Standard
+text size : relative to zoom, or definitive.
+\end_layout
+
+\begin_layout Section
+Program architecture
+\end_layout
+
+\begin_layout Standard
+It uses Java as programming language, Swing for developping Graphic-user
+ interface, and geom2d, a personal library for handling of geometric figures
+ in the plane.
+\end_layout
+
+\begin_layout Subsection
+Pattern MVC
+\end_layout
+
+\begin_layout Standard
+The document model should be build independantly of the rest of the program.
+ It consist in the document model described in previous section.
+ 
+\end_layout
+
+\begin_layout Standard
+For a given model, several views can be made.
+ It should not be a problem to have several views attach to a document.
+\end_layout
+
+\begin_layout Subsection
+Tools and actions
+\end_layout
+
+\begin_layout Standard
+We distinguish 2 ways to modify a document, depending on whether the user
+ can interact with the model.
+ If the modification requires the user to specify a position, to choose
+ an element, to drag an element...
+ then we use a 'tool'.
+ Anyway, we use an 'action'.
+ Actions can be easily scripted, contrary to tools which require to save
+ the data provided by user.
+\end_layout
+
+\begin_layout Section
+File formats
+\end_layout
+
+\begin_layout Subsection
+User interface
+\end_layout
+
+\begin_layout Standard
+Use java internationalisation resource files.
+\end_layout
+
+\begin_layout LyX-Code
+menu=menu1 menu2 menu3
+\end_layout
+
+\begin_layout LyX-Code
+menu1=action1 action2 action3
+\end_layout
+
+\begin_layout LyX-Code
+menu1Label=menu 1
+\end_layout
+
+\begin_layout LyX-Code
+action1Label=Action 1
+\end_layout
+
+\begin_layout Subsection
+Tools
+\end_layout
+
+\end_body
+\end_document
