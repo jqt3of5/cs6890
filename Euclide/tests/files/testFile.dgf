@@ -1,0 +1,35 @@
+# Euclide sample file for a foo DGF file
+# contains dynamic geometry information and tags to draw them
+#
+# used for tests of Euclide Application
+#
+
+
+# ------------------------
+# Document tags
+
+# name of the document
+docName = Test File
+
+# author name
+docAuthor=myself
+
+# doc creation date (MM/DD/YYYY)
+docCreation=07/10/96 4:5 PM, PDT
+
+# the different sheets in the doc
+docSheets=sheet1 sheet2
+
+
+# ------------------------
+# Document Elements
+
+
+# ------------------------
+# Shapes contained in each sheet
+
+sheet1Layers = layer1-1 layer1-2
+sheet1Name=Sheet 1
+
+sheet2Layers = layer2-1
+sheet2Name=Sheet 2

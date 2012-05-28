@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg     xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="200.000000mm" height="200.000000mm"    viewBox="-10.000000 -10.000000 20.000000 20.000000"
+>
+  <g fill="Red" stroke="Black" stroke-width="0.02">
+    <circle cx="-0.400000" cy="-1.300000" r="0.050000"/>
+  </g>
+  <g fill="Red" stroke="Black" stroke-width="0.02">
+    <circle cx="7.400000" cy="-2.600000" r="0.050000"/>
+  </g>
+  <g fill="none" stroke="Blue" stroke-width="0.02">
+    <circle cx="-0.400000" cy="-1.300000" r="7.907591"/>
+  </g>
+  <g fill="Red" stroke="Black" stroke-width="0.02">
+    <circle cx="4.100000" cy="6.900000" r="0.050000"/>
+  </g>
+  <g fill="Red" stroke="Black" stroke-width="0.02">
+    <circle cx="-8.700000" cy="-8.000000" r="0.050000"/>
+  </g>
+  <g fill="none" stroke="Blue" stroke-width="0.02">
+    <line x1="4.100000" y1="6.900000" x2="-8.700000" y2="-8.000000"/>
+  </g>
+  <g fill="Red" stroke="Black" stroke-width="0.02">
+    <circle cx="3.133062" cy="5.774424" r="0.050000"/>
+  </g>
+  <g fill="Red" stroke="Black" stroke-width="0.02">
+    <circle cx="-6.860930" cy="-5.859208" r="0.050000"/>
+  </g>
+</svg>
+

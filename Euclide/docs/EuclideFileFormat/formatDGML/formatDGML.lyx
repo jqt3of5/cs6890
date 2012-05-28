@@ -1,0 +1,448 @@
+#LyX 1.5.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language french
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 0
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Format de fichier à balise pour géométrie dynamique
+\end_layout
+
+\begin_layout Standard
+\begin_inset LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Général
+\end_layout
+
+\begin_layout Standard
+Format de stockage de fichier contenant des primitives geometriques en dépendanc
+e les unes avec les autres, ainsi que des règles d'affichage de ces primitives.
+\end_layout
+
+\begin_layout Standard
+Format de fichier basé sur XML.
+\end_layout
+
+\begin_layout Section
+Description du document principal
+\end_layout
+
+\begin_layout Subsection
+Document
+\end_layout
+
+\begin_layout Standard
+Un document contient plusieurs feuilles, et des objets géométriques (mesures,
+ transformations...).
+ Il contient aussi des meta-informations, comme le nom du document ou de
+ l'auteur, la date...
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Éléments
+\end_layout
+
+\begin_layout Itemize
+des éléments géométriques dynamiques
+\end_layout
+
+\begin_layout Itemize
+des feuilles
+\end_layout
+
+\begin_layout Subsubsection
+Attributs
+\end_layout
+
+\begin_layout Description
+name le nom du document
+\end_layout
+
+\begin_layout Section
+Structure du document
+\end_layout
+
+\begin_layout Standard
+Le document contient plusieurs feuilles, qui contiennent des calques (layers),
+ et ces calques contiennent les figures.
+\end_layout
+
+\begin_layout Subsection
+Feuilles
+\end_layout
+
+\begin_layout Standard
+Une feuille est définie par un nom, et par une série de calques.
+\end_layout
+
+\begin_layout Standard
+Pour la taille de la fenêtre, il faut spécifier :
+\end_layout
+
+\begin_layout Itemize
+la taille de la boîte
+\end_layout
+
+\begin_layout Itemize
+le placement de la boîte sur la page
+\end_layout
+
+\begin_layout Subsubsection
+Éléments
+\end_layout
+
+\begin_layout Itemize
+une liste de calques (layers)
+\end_layout
+
+\begin_layout Subsubsection
+Attributs
+\end_layout
+
+\begin_layout Description
+name le nom de la feuille
+\end_layout
+
+\begin_layout Description
+viewBox taille de la boîte de délimitation
+\end_layout
+
+\begin_layout Subsection
+Calques
+\end_layout
+
+\begin_layout Subsubsection
+Éléments
+\end_layout
+
+\begin_layout Itemize
+une liste de figures, définies par une géométrie et un style.
+\end_layout
+
+\begin_layout Subsubsection
+Attributs
+\end_layout
+
+\begin_layout Description
+name le nom du calque
+\end_layout
+
+\begin_layout Description
+visible indicateur de visibilité du calque (défaut : vrai)
+\end_layout
+
+\begin_layout Description
+editable indicateur de possibilité d'édition du calque (défaut : vrai)
+\end_layout
+
+\begin_layout Subsection
+Figures
+\end_layout
+
+\begin_layout Standard
+Une figure est un élément graphique appartenant à une couche.
+ Il faut spécifier la géométrie, et le style de dessin.
+\end_layout
+
+\begin_layout Subsubsection
+Éléments
+\end_layout
+
+\begin_layout Standard
+rien
+\end_layout
+
+\begin_layout Subsubsection
+Attributs
+\end_layout
+
+\begin_layout Standard
+Différents attributs de style pour dessiner les points, les courbes, ou
+ les domaines.
+ S'inspirer de SVG.
+\end_layout
+
+\begin_layout Section
+\start_of_appendix
+Anciennes idées
+\end_layout
+
+\begin_layout Description
+geometry une référence à une forme géométrique dynamique
+\end_layout
+
+\begin_layout Description
+[shapeTag]MarkerType le type de point : rond, carré, croix...
+\end_layout
+
+\begin_layout Description
+[shapeTag]MarkerSize la taille du point (rayon du cercle, côté du carré...)
+\end_layout
+
+\begin_layout Description
+[shapeTag]LineColor la couleur de la courbe
+\end_layout
+
+\begin_layout Description
+[shapeTag]LineAlpha la transparence de la couleur
+\end_layout
+
+\begin_layout Description
+[shapeTag]LineWidth épaisseur de la courbe
+\end_layout
+
+\begin_layout Description
+[shapeTag]LineCap type des bouts de courbe.
+ Peut être : 
+\begin_inset Quotes eld
+\end_inset
+
+ROUND
+\begin_inset Quotes erd
+\end_inset
+
+ (défaut), 
+\begin_inset Quotes eld
+\end_inset
+
+SQUARE
+\begin_inset Quotes erd
+\end_inset
+
+ ou 
+\begin_inset Quotes eld
+\end_inset
+
+BUTT
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+[shapeTag]LineJoin jonction entre les segments.
+ Peut être : 
+\begin_inset Quotes eld
+\end_inset
+
+BEVEL
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+MITER
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+ROUND
+\begin_inset Quotes erd
+\end_inset
+
+ (défaut)
+\end_layout
+
+\begin_layout Description
+[shapeTag]FillColor la couleur de remplissage
+\end_layout
+
+\begin_layout Description
+[shapeTag]FillAlpha la transparence du remplissage
+\end_layout
+
+\begin_layout Subsubsection
+Types de markers
+\end_layout
+
+\begin_layout Standard
+Un marqueur peut être dessiné selon différents types.
+ Chaque type peut être agrandi en fonction de la taille (
+\begin_inset Quotes eld
+\end_inset
+
+MarkerSize
+\begin_inset Quotes erd
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Description
+round un disque de diamètre 
+\begin_inset Quotes eld
+\end_inset
+
+MarkerSize
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+plus une croix (deux traits orthogonaux), de longueurs 
+\begin_inset Quotes eld
+\end_inset
+
+MarkerSize
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+times une croix (deux traits diagonaux), de longueurs 
+\begin_inset Quotes eld
+\end_inset
+
+MarkerSize
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+square un carré, de côté (ou diagonale ?) 
+\begin_inset Quotes eld
+\end_inset
+
+MarkerSize
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+diamond un carré en diagonal, de côté (ou diagonale ?) 
+\begin_inset Quotes eld
+\end_inset
+
+MarkerSize
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Tags de style
+\end_layout
+
+\begin_layout Standard
+Ils reprennent plusieurs spécification de style, et peuvent être référencés
+ par plusieurs figures.
+ Cela permet de modifier le style d'affichage de plusieurs figures semblables.
+\end_layout
+
+\begin_layout Description
+[shapeTag]markerStyle
+\end_layout
+
+\begin_layout Description
+[shapeTag]lineStyle
+\end_layout
+
+\begin_layout Description
+[shapeTag]fillStyle
+\end_layout
+
+\begin_layout Subsection
+Objets dynamiques
+\end_layout
+
+\begin_layout Standard
+tag : dynamic
+\end_layout
+
+\begin_layout Subsubsection
+Éléments
+\end_layout
+
+\begin_layout Itemize
+arguments une liste d'arguments
+\end_layout
+
+\begin_layout Itemize
+paramètres
+\end_layout
+
+\begin_layout Subsubsection
+Attributs
+\end_layout
+
+\begin_layout Itemize
+classe
+\end_layout
+
+\begin_layout Description
+[objectTag] une ligne de texte permettant de reconstruire la forme.
+ La ligne de texte suit le format : 
+\begin_inset Quotes eld
+\end_inset
+
+[Class param1 param2 ...]
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Le terme [Class] est une classe héritant de Shape2D, Measure2D ou Transform2D,
+ et doit pouvoir être chargée dynamiquement à partir des paramètres donnés.
+ Les paramètres sont soit des tags faisant référence à d'autres formes,
+ à des mesures ou des transformations, ou alors des valeurs fixes (constantes
+ numériques, ou les chaînes true ou false).
+\end_layout
+
+\end_body
+\end_document

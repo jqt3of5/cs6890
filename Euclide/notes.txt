@@ -1,0 +1,21 @@
+Notes for the program Euclide
+
+Euclide is a dynamic geometry software. User places free geometrical shapes, like
+points, lines or circles. Other geometrical shapes can be constructed from existing ones, 
+e.g. intersection points of curves, center of circle, projected points... When parent
+shapes are moved, children shapes are updated accordingly.
+
+Some measures can be made on the shapes (distance between a point and a shape, radius of
+a circle, angles of lines...), and can be used to create other shapes (line with the same
+angle as another line...).
+
+Transforms are supported: rotations, translations, symetries... as well as predicates, 
+which return a boolean result (Is a point on a curve, are 3 points colinear...). 
+and can build shapes dependent on them. 
+
+The aim of Euclide is to be a bridge between true geometrical drawing, and more 
+classical vectorial drawing program. The sofware is still largely in development, 
+and many features are not yet implemented.
+
+Homepage of the project:
+http://jeuclide.sourceforge.net/

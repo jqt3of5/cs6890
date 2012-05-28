@@ -1,0 +1,57 @@
+2012-05-24 20:16:01,400 INFO  Euclide - (Euclide.java:59) - Start programm Euclide
+2012-05-24 20:16:01,486 INFO  Euclide - (Euclide.java:68) - Create GUI
+2012-05-24 20:16:01,698 INFO  Euclide - (GuiBuilder.java:114) - Tools loaded successfully
+2012-05-24 20:16:01,732 INFO  Euclide - (GuiBuilder.java:146) - Actions loaded successfully
+2012-05-24 20:16:02,219 INFO  Euclide - (EuclideMainFrame.java:186) - Add a view
+2012-05-24 20:16:02,219 INFO  Euclide - (EuclideMainFrame.java:202) - Change current view
+2012-05-24 20:16:02,220 INFO  Euclide - (EuclideMainFrame.java:214) -   change current doc to: NoName
+2012-05-24 20:16:02,312 INFO  Euclide - (EuclideMainFrame.java:307) - setBounds of main frame
+2012-05-24 20:16:02,312 INFO  Euclide - (EuclideMainFrame.java:301) - resize main frame
+2012-05-24 20:16:02,313 INFO  Euclide - (EuclideMainFrame.java:144) - Frame size set to 800*700
+2012-05-24 20:16:02,313 INFO  Euclide - (EuclideMainFrame.java:307) - setBounds of main frame
+2012-05-24 20:16:02,314 INFO  Euclide - (GuiBuilder.java:292) - Menu resource file opened
+2012-05-24 20:16:02,350 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: CTRL_N
+2012-05-24 20:16:02,356 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: CTRL_O
+2012-05-24 20:16:02,362 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: CTRL_W
+2012-05-24 20:16:02,363 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: CTRL_Q
+2012-05-24 20:16:02,377 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: SUPPR
+2012-05-24 20:16:02,580 INFO  Euclide - (EuclideMainFrame.java:186) - Add a view
+2012-05-24 20:16:02,580 INFO  Euclide - (EuclideMainFrame.java:202) - Change current view
+2012-05-24 20:16:02,581 INFO  Euclide - (EuclideMainFrame.java:214) -   change current doc to: NoName
+2012-05-24 20:16:02,582 INFO  Euclide - (Euclide.java:73) - Create Main frame
+2012-05-24 20:16:02,885 INFO  Euclide - (Euclide.java:77) - Initialize document
+2012-05-24 20:19:28,353 INFO  Euclide - (SelectToolAction.java:60) - select tool: addCircle3Points
+2012-05-24 20:20:18,885 INFO  Euclide - (SelectToolAction.java:60) - select tool: addCircleArc3Points
+2012-05-24 20:20:33,342 INFO  Euclide - (SelectToolAction.java:60) - select tool: addBezierCurve4Points
+2012-05-24 20:20:42,695 INFO  Euclide - (EuclideMainFrame.java:389) - close frame
+2012-05-24 20:20:44,158 INFO  Euclide - (EuclideGui.java:1023) - Remove doc from gui: NoName
+2012-05-25 14:53:58,479 INFO  Euclide - (Euclide.java:59) - Start programm Euclide
+2012-05-25 14:53:59,014 INFO  Euclide - (Euclide.java:68) - Create GUI
+2012-05-25 14:54:00,453 INFO  Euclide - (GuiBuilder.java:114) - Tools loaded successfully
+2012-05-25 14:54:00,771 INFO  Euclide - (GuiBuilder.java:146) - Actions loaded successfully
+2012-05-25 14:54:01,334 INFO  Euclide - (EuclideMainFrame.java:186) - Add a view
+2012-05-25 14:54:01,335 INFO  Euclide - (EuclideMainFrame.java:202) - Change current view
+2012-05-25 14:54:01,335 INFO  Euclide - (EuclideMainFrame.java:214) -   change current doc to: NoName
+2012-05-25 14:54:01,432 INFO  Euclide - (EuclideMainFrame.java:307) - setBounds of main frame
+2012-05-25 14:54:01,432 INFO  Euclide - (EuclideMainFrame.java:301) - resize main frame
+2012-05-25 14:54:01,433 INFO  Euclide - (EuclideMainFrame.java:144) - Frame size set to 800*700
+2012-05-25 14:54:01,433 INFO  Euclide - (EuclideMainFrame.java:307) - setBounds of main frame
+2012-05-25 14:54:01,448 INFO  Euclide - (GuiBuilder.java:292) - Menu resource file opened
+2012-05-25 14:54:01,468 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: CTRL_N
+2012-05-25 14:54:01,484 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: CTRL_O
+2012-05-25 14:54:01,490 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: CTRL_W
+2012-05-25 14:54:01,491 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: CTRL_Q
+2012-05-25 14:54:01,506 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: SUPPR
+2012-05-25 14:54:01,708 INFO  Euclide - (EuclideMainFrame.java:186) - Add a view
+2012-05-25 14:54:01,708 INFO  Euclide - (EuclideMainFrame.java:202) - Change current view
+2012-05-25 14:54:01,709 INFO  Euclide - (EuclideMainFrame.java:214) -   change current doc to: NoName
+2012-05-25 14:54:01,710 INFO  Euclide - (Euclide.java:73) - Create Main frame
+2012-05-25 14:54:02,041 INFO  Euclide - (Euclide.java:77) - Initialize document
+2012-05-25 14:54:18,608 INFO  Euclide - (SelectToolAction.java:60) - select tool: addEllipse3Points
+2012-05-25 14:54:37,627 INFO  Euclide - (SelectToolAction.java:60) - select tool: addPolygonNPoints
+2012-05-25 14:54:58,082 WARN  Euclide - (DynamicObjectsManager.java:89) - Created default tag 'array1' for an object of 'class dynamic.DynamicArray2D'
+2012-05-25 14:55:01,644 INFO  Euclide - (SelectToolAction.java:60) - select tool: addPerpendicularLine
+2012-05-25 14:55:04,148 INFO  Euclide - (SelectToolAction.java:60) - select tool: addParallelLine
+2012-05-25 14:55:06,484 INFO  Euclide - (SelectToolAction.java:60) - select tool: addCircle2Points
+2012-05-25 14:55:23,478 INFO  Euclide - (EuclideMainFrame.java:389) - close frame
+2012-05-25 14:55:24,684 INFO  Euclide - (EuclideGui.java:1023) - Remove doc from gui: NoName

@@ -1,0 +1,41 @@
+
+docName = Intersection 2 lines
+docSheets = sheet1
+
+sheet1Name = Sheet 1
+sheet1Size = 500 500
+sheet1Layers = layer1
+
+layer1Name = Layer 1
+layer1Shapes = elemP1 elemP2 elemP3 elemP4 elemL1 elemL2 elemPI
+
+elemP1Geometry = point1
+
+elemP2Geometry = point2
+
+elemP3Geometry = point3
+
+elemP4Geometry = point4
+
+elemL1Geometry = line1
+elemL1LineColor = 255 0 0
+elemL1LineWidth = 2.5
+
+elemL2Geometry = line2
+elemL2LineColor = 0 0 0
+elemL2LineWidth = 1.5
+
+elemPIGeometry = pi1
+elemPIMarkerColor = Turquoise
+elemPIMarkerFill = Olive
+elemPIMarkerSize = 10
+
+point1 = Point2D 100 100
+point2 = Point2D 200 150
+point3 = Point2D 400 100
+point4 = Point2D 50 400
+
+line1 = StraightLine2Points2D point1 point2
+line2 = StraightLine2Points2D point3 point4
+
+pi1 = Intersection2StraightObjects2D line1 line2

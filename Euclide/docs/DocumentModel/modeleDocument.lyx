@@ -1,0 +1,417 @@
+#LyX 1.5.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 0
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Modèle de document Euclide
+\end_layout
+
+\begin_layout Abstract
+Description rapide du modèle de document utilisé pour le programme Euclide
+ (dessin géométrique interactif).
+\end_layout
+
+\begin_layout Section
+Général
+\end_layout
+
+\begin_layout Standard
+Euclide est un programme de manipulation de primitives géométriques dans
+ le plan.
+ Il permet de manipuler des formes (droites, segments, arcs de cerclas...),
+ des transformations affines (rotations, symmétries...), des mesures (distance
+ entre 2 points, angle entre 2 droites...), et des prédicats (point sur une
+ droite, points alignés...).
+\end_layout
+
+\begin_layout Standard
+Je détaille ici la manière dont ces différentes entités sont stockées en
+ mémoire par le programme.
+\end_layout
+
+\begin_layout Standard
+Un document est composé de plusieurs feuilles, divisées en plusieurs calques,
+ qui contiennent chacun un ensemble de figures géométriques définies par
+ leur géométrie et leur style de dessin.
+\end_layout
+
+\begin_layout Section
+Document
+\end_layout
+
+\begin_layout Standard
+Un document contient plusieurs feuilles, et des objets géométriques (mesures,
+ transformations...).
+ Il contient aussi des meta-informations, comme le nom du document ou de
+ l'auteur, la date...
+\end_layout
+
+\begin_layout Subsection
+Entités de base
+\end_layout
+
+\begin_layout Description
+sheets les tags des différentes feuilles dans le document
+\end_layout
+
+\begin_layout Description
+measures les différentes mesures
+\end_layout
+
+\begin_layout Description
+predicates les différents prédicats (construction donnant une valeur booléenne)
+ stockés dans le doc
+\end_layout
+
+\begin_layout Description
+transforms les différentes transformations
+\end_layout
+
+\begin_layout Description
+vectors les vecteurs stockés dans le doc
+\end_layout
+
+\begin_layout Standard
+Tags pour affichage ou impression
+\end_layout
+
+\begin_layout Subsection
+Entités de meta informations
+\end_layout
+
+\begin_layout Description
+name le nom du document
+\end_layout
+
+\begin_layout Description
+author le nom de l'auteur du document
+\end_layout
+
+\begin_layout Description
+creationDate la date de création du document (date de la première sauvegarde),
+ en tant que chaîne de caractères pour le moment
+\end_layout
+
+\begin_layout Section
+Feuilles
+\end_layout
+
+\begin_layout Standard
+Une feuille est définie par un nom, et par une série de calques.
+\end_layout
+
+\begin_layout Subsection
+Tags requis
+\end_layout
+
+\begin_layout Description
+layers une série de tags pour les calques contenus dans cette feuille
+\end_layout
+
+\begin_layout Description
+Page une suite de 4 valeurs numériques [x y width height] contenant les
+ dimensions de la feuille
+\end_layout
+
+\begin_layout Description
+viewBox une suite de 4 valeurs numériques [xmin xmax ymin ymax] contenant
+ les limites de la zone de dessin
+\end_layout
+
+\begin_layout Description
+
+\end_layout
+
+\begin_layout Section
+Calques
+\end_layout
+
+\begin_layout Standard
+Un calque est une couche contenant plusieurs figures, que l'on peut cacher
+ ou interdire à la modification.
+\end_layout
+
+\begin_layout Description
+shapes les figures contenues dans ce calque, dans l'ordre de dessin (la
+ première figure de la liste est la première à être dessinnée)
+\end_layout
+
+\begin_layout Description
+visible indicateur de visibilité du calque (défaut : vrai)
+\end_layout
+
+\begin_layout Description
+edit indicateur de possibilité d'édition du calque (défaut : vrai)
+\end_layout
+
+\begin_layout Section
+Figures
+\end_layout
+
+\begin_layout Standard
+Note: pour le moment, chaque tag reference à la fois la figure et son affichage.
+ On pourrait séparer les choses, de manière à pouvoir représenter une même
+ forme dans différents calques et/ou avec différents styles.
+\end_layout
+
+\begin_layout Description
+geometry la géométrie créée.
+\end_layout
+
+\begin_layout Standard
+Il faut aussi spécifier l'affichage des figures.
+ Pour les marqueurs, le tracé et le remplissage du marqueur est spécifié
+ par les attributs 
+\begin_inset Quotes eld
+\end_inset
+
+LineXXX
+\begin_inset Quotes erd
+\end_inset
+
+ et 
+\begin_inset Quotes eld
+\end_inset
+
+FillXXX
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Changer 
+\begin_inset Quotes eld
+\end_inset
+
+XXXAlpha
+\begin_inset Quotes erd
+\end_inset
+
+ par 
+\begin_inset Quotes eld
+\end_inset
+
+XXXTransparency
+\begin_inset Quotes erd
+\end_inset
+
+ ?
+\end_layout
+
+\begin_layout Description
+MarkerType le type de point : rond, carré, croix...
+\end_layout
+
+\begin_layout Description
+MarkerSize la taille du point (rayon du cercle, côté du carré...)
+\end_layout
+
+\begin_layout Description
+LineColor la couleur de la courbe
+\end_layout
+
+\begin_layout Description
+LineAlpha la transparence de la couleur
+\end_layout
+
+\begin_layout Description
+LineWidth épaisseur de la courbe
+\end_layout
+
+\begin_layout Description
+LineCap type des bouts de courbe.
+ Peut être : 
+\begin_inset Quotes eld
+\end_inset
+
+ROUND
+\begin_inset Quotes erd
+\end_inset
+
+ (défaut), 
+\begin_inset Quotes eld
+\end_inset
+
+SQUARE
+\begin_inset Quotes erd
+\end_inset
+
+ ou 
+\begin_inset Quotes eld
+\end_inset
+
+BUTT
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+LineJoin jonction entre les segments.
+ Peut être : 
+\begin_inset Quotes eld
+\end_inset
+
+BEVEL
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+MITER
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+ROUND
+\begin_inset Quotes erd
+\end_inset
+
+ (défaut)
+\end_layout
+
+\begin_layout Description
+FillColor la couleur de remplissage
+\end_layout
+
+\begin_layout Description
+FillAlpha la transparence du remplissage
+\end_layout
+
+\begin_layout Standard
+Un marqueur peut être dessiné selon différents types.
+ Chaque type peut être agrandi en fonction de la taille (
+\begin_inset Quotes eld
+\end_inset
+
+MarkerSize
+\begin_inset Quotes erd
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Description
+round un disque de diamètre 
+\begin_inset Quotes eld
+\end_inset
+
+MarkerSize
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+plus une croix (deux traits orthogonaux), de longueurs 
+\begin_inset Quotes eld
+\end_inset
+
+MarkerSize
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+times une croix (deux traits diagonaux), de longueurs 
+\begin_inset Quotes eld
+\end_inset
+
+MarkerSize
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+square un carré, de côté (ou diagonale ?) 
+\begin_inset Quotes eld
+\end_inset
+
+MarkerSize
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+diamond un carré en diagonal, de côté (ou diagonale ?) 
+\begin_inset Quotes eld
+\end_inset
+
+MarkerSize
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Tags de style
+\end_layout
+
+\begin_layout Standard
+Ils reprennent plusieurs spécification de style, et peuvent être référencés
+ par plusieurs figures.
+ Cela permet de modifier le style d'affichage de plusieurs figures semblables.
+\end_layout
+
+\begin_layout Description
+[shapeTag]markerStyle
+\end_layout
+
+\begin_layout Description
+[shapeTag]lineStyle
+\end_layout
+
+\begin_layout Description
+[shapeTag]fillStyle
+\end_layout
+
+\end_body
+\end_document

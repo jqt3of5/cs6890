@@ -1,0 +1,205 @@
+/*
+ * a small style shet, which put menubar at the left, uses header and footer,
+ * and divides the main container into several blocks.
+ */
+ 
+
+/* ===========================================================
+ * Layout Style
+ */
+ 
+/* On reduit les marges */
+body
+{
+	margin: 10px 0 ;
+	padding: 0 ;
+	text-align: center ;
+}
+
+.tutocode {
+	border: 1px solid black;
+	padding: 10px;
+	background-color: #eeeeee;
+	font-size: normal;
+}
+
+
+.code {
+	border: 1px solid black;
+	padding: 10px;
+	background-color: #ffffff;
+	width: 700px;
+	font-size: small;
+}
+
+/* 
+ * Main elements of the interface
+ */
+
+/* header on the whole width of the page */
+#header {
+	width:  900px;
+	height: 100px;
+	float: left;
+}
+
+/* remove extra spaces for titles of header */
+#header h1 {
+	margin: 0;
+	padding: 20;
+}
+
+#container {
+	width: 900;
+	margin: 0 auto;
+	border: 2px solid #4ab;
+}
+
+#menu {
+	/*border: 1px solid #22b;*/
+	/*margin: 25px 0px 0px 0px;*/
+	
+	width: 200px;
+	height: 100%;
+	float: left;
+}
+
+
+#content {
+	width: 650px;
+	float: left;
+	margin: 0 20px 0 20px;
+}
+
+#footer {
+	width: 100%;
+	clear: both;
+}
+
+
+/*
+ * Menu elements
+ */
+
+#menu ul {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#menu li {
+	height: 2.2em;
+	margin: 0;
+	padding: 0;
+}
+
+#menu li a {
+	line-height: 2em;
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+#menu ul, #menu li {
+	list-style-type: none;
+}
+
+ 
+div#content li {
+	padding-bottom: 5px;
+}
+
+/* 
+ * Lists of links
+ */
+
+li.link {
+	padding-bottom: 10px;	/* let free space after the link item */
+}
+
+pre {
+	overflow: auto ;
+}
+
+
+
+/* ===========================================================
+ * Colors
+ */
+
+body{
+	background-color: #eee;
+}
+
+#header {
+	background-color: #66e;
+	color: white;
+}
+
+#container {
+	background-color: #fff;
+}
+
+#menu {
+	background-color: #bbf;
+	color: black;
+}
+
+#menu a {
+	color: black;
+}
+
+#menu li.selected a {
+	background-color: #66e;
+	color: white;
+	font-weight: bold;
+}
+
+#menu li a:hover {
+	color: white;
+	background-color: #66e;
+}
+
+div#content h2{
+	border-bottom: 2px solid #22b ;
+}
+
+
+/* ===========================================================
+ * typography
+ */
+
+html, body {
+	font-family: "helvetica", sans-serif ;
+	font-size: .9em;
+}
+
+p {
+	text-align: justify;
+}
+
+
+#header h1 {
+	text-align: left;
+	line-height: 50px;
+	font-family: helvetica;
+}
+
+#content {
+	text-align: justify;
+}
+
+#menu li a {
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+#menu li a:hover {
+	font-weight: bold;
+}
+
+a.url {
+	font-size: .8em;	/* url are written smaller */
+}
+

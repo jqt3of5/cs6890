@@ -1,0 +1,164 @@
+# @(#)Euclide.menu	#
+#
+# Definition of the menu for Euclide program.
+# This file must be located in "gui/res/Euclide.menu"
+#
+# Organization:
+# Tag 'menubar' is followed by several menu names.
+# Each menu names plus the key 'menu' is followed by menu items.
+# If a the name of a menu item plus the key 'Menu' exists, it defines a submenu.
+# Otherwise, it defines an action, or a tool
+# 
+# Action keys are defined by the class gui/init/ActionsLoader, and in the file
+# "gui/res/Euclide.actions".
+# Tool keys are defined by the class gui/init/ToolsLoader, and in the file
+# "gui/res/Euclide.tools".
+# Labels of menus are stored in file res/Euclide.properties
+#
+
+
+
+# Menu hierarchy --------------------------------
+menubar = file edit view doc constructions macros help
+
+#fileMenu = new open - save saveAs exportSheetAsSvg exportPoints - close exit
+fileMenu = newDoc openDoc - saveDoc saveAs exportPoints - documentList - \
+    closeDoc exit
+
+documentListMenu = 
+
+#    cut copy paste - \
+editMenu = \
+	editStyles editPositions selectionChangeLayer - \
+	importPoints - selectionDelete - select printShapeInfo moveFreePoints
+
+editStylesMenu = \
+	editMarkerStyle editLineStyle editFillStyle \
+	
+# - editDocStyles
+	
+editPositionsMenu = \
+	selectionUp selectionDown selectionTop selectionBottom
+
+viewMenu = zoomin zoomout zoomOne - zoomFitWidth zoomFitHeight zoomBestFit
+
+docMenu = \
+	addSheet editSheet removeSheet editGrid - addLayer toggleLayersDialog - \
+	editConstants - displayDocInfo displayDocTree
+	
+constructionsMenu = \
+	points lines circles conics splines polygons - \
+	curves domains - locus - \
+	vectors transforms measures predicates labels
+
+pointsMenu = \
+	addFreePoint - \
+	addIntersection2Lines addIntersectionLineCircle addIntersection2Circles \
+		addIntersectionsLineCurve addIntersectionLineCurveIndex - \
+	addMidPoint2Points addCentroidNPoints - \
+	addPointOnCurve addPointOnCurvePosition addGeodesicPointsOnCurve - \
+	addPolygonVertex addPolygonCentroid addPointPointSetIndex - \
+	addPoint2Values - \
+	addPointRelativePoint addPointRelative3Points - \
+	addPointSet addPolygonVertices addPolylineVertices \
+        addCurveSingularPoints - \
+    addBiPoint
+
+linesMenu = \
+	addLineSegment addPolygonEdge - \
+	addStraightLine addMedian2Points \
+	addParallelLine addParallelLineDistance addPerpendicularLine - \
+	addLinePointAngle addHorizontalLine addVerticalLine \
+	addSupportingLine addRadicalLine2Circles - \
+	addRay2Points addInvertedRay2Points addBisector2Lines \
+	addBisector3Points  addReflectedRay  - \
+	addTangentCircleLine addTangentLineCurvePoint addTangentRayCurvePoint \
+	addTangent2Circles 
+
+circlesMenu = \
+	addCircle2Points addCircleCenterRadius addCircle3Points \
+	addCircleDiameter - addOrthogonalCircle addOsculatingCircle - \
+	addCircleArc3Points addCircleArc - \
+	addCircleCenter addSupportingCircle
+	
+
+#	addClippedCircle - \
+
+conicsMenu = \
+    addEllipse3Points addEllipse2FocusPoint addEllipse2FocusLength - \
+	addParabola2Points addParabolaLinePoint - addHyperbola3Points - \
+	addConic5Points - addConicFoci
+
+splinesMenu = \
+    addBezierCurve3Points addBezierCurve4Points \
+
+#	- \
+#	addReuleaux2Points
+
+polygonsMenu = \
+    addPolyline addClosedPolyline convertPointSetToPolyline \
+        convertPointSetToClosedPolyline - \
+	addPolygonNPoints convertPointSetToPolygon - \
+	addConvexHullNPoints addConvexHullPointSet - \
+	addPolygonCenterVertexNumber addPolygonCenterApothemNumber \
+    addRectangle2Points addSquare2Points addEquiTriangle2Points \
+	addPolygon3Points addPolygonCenter2Points - \
+	addUnion2Polygons addIntersection2Polygons addDifference2Polygons \
+	addExclusiveOr2Polygons
+
+curvesMenu = \
+    addSubCurve2Points addSubCurve2Positions - \
+    addCurveToPolyline addReverseCurve - \
+    addPolySmoothCurve addClosedPolySmoothCurve addCurveSetNCurves - \
+    addCurveCurveSetIndex - \
+    addParallelCurveDistance addParallelCurvePoint
+    
+domainsMenu = \
+	addContinuousBoundarySet - \
+    addCurveToDomain addBoundaryDomain addComplementaryDomain addDomainToPolygon - \
+    addBufferShapeDistance addBufferShapePoint \
+	- addBox2Points addBoundingBox
+
+locusMenu = \
+    addPointLocus addCurveLocus - clearLoci
+
+
+transformsMenu = \
+	addTranslationVector addTranslation2Points \
+	addRotation3Points addRotationPointAngle \
+	addScalingCenter2Points addScalingCenterFactor \
+	addLineSymmetry addPointSymmetry addCircleInversion - \
+	addComposedTransform - \
+	addTransformedShape addMultiTransformedShape addRosace 
+
+measuresMenu = \
+    unaryOps binaryOps - \
+	addLengthLineSegment calcCurveLength - \
+	addDistance2Points addDistancePointCurve addSignedDistancePointCurve \
+		addWindingAnglePointCurve - addPowerPointCircle addRadiusCircle - \
+	addAreaPolygon addSignedAreaPolygon - \
+	addVertexNumberPolygon addSizePointSet - \
+	addCurvePositionPoint - \
+	addAngle2Lines addHorizontalAngle - \
+	addDotProduct2Vectors addCrossProduct2Vectors 
+	
+unaryOpsMenu = addInvertVariable addSqrtVariable addSquareVariable
+
+binaryOpsMenu = addVariablesAdd addVariablesSubtract \
+    addVariablesMultiply addVariablesDivide
+
+predicatesMenu = \
+	addIsPointInside addIsColinearPoints - isShapeEmpty isShapeBounded
+
+vectorsMenu = \
+	addVector2Points \
+	addVectorAdd2Vectors \
+	addVectorMultiplyVector \
+	addTangentVectorCurvePosition
+
+labelsMenu = addStringLabel - \
+    addShapeNameLabel addMeasureLabel addPredicateLabel
+
+macrosMenu = createMacro runMacro 
+    
+helpMenu = about

@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <meta name="Author" content="David Legland">
+  <meta name="Description" content="Euclide is a dynamic geometry software">
+  <meta name="KeyWords" content="Applet, Java, geometry, dynamic geometry, euclide, jeuclide, euclid, euclidean geometry">
+
+  <title>Euclide: features</title>
+  <link rel="stylesheet" href="euclide.css" type="text/css" />
+</head>
+
+
+<body>
+
+
+
+<div id="container">
+
+
+<div id="header">
+  <h1>Euclide: dynamic geometry editor</h1>
+</div> <!-- end of header -->
+
+
+<div id="menu">
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="history.html">News</a></li>
+  <li><a href="features.html">Features</a></li>
+  <li><a href="demos.html">Screenshots</a></li>
+  <li><a href="download.html">Download</a></li>
+  <li><a href="docs.html">Documentation</a></li>
+  <li><a href="contrib.html">Contribute</a></li>
+  <li><a href="links.html">Links</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+
+
+<h1>Features of Euclide</h1>
+
+<h2>Overview</h2>
+<p>In the actual version, Euclide allows creations of geometric entities,
+called <strong>constructions</strong>.
+These constructions can be classified as:
+<ul>
+  <li>Shapes, defined as a set of points in the plane :<ul>
+    <li>points or point sets</li>
+    <li>curves</li>
+    <li>domains, that are bounded by an oriented curve</li>
+  	</ul>
+  </li>
+  <li>Geometric measures (length of a curve, angle between 2 lines...)</li>
+  <li>Transforms (rotations, translations...)</li>
+  <li>Vectors, usually defined from 2 points</li>
+  <li>Predicates, that are the result of a boolean test
+  	(is a point inside a polygon ?, is the polygon CCW oriented ?)</li>
+  </ul>
+</p>
+
+
+<h2>Constructions</h2>
+
+<h3>Creation of shapes</h3>
+
+<p>
+Various shapes can be created from selecting other geometrical objects
+(shapes, measures, transforms), or by specifying manually value for position,
+radius... When a shape need a new point, the user clic on a point of the
+figure, or on the location of a new free point, which will be created in 
+the same time as the new shape. Here is a list of available shapes:
+<ul>
+  <li>Points:</li>
+  <ul>
+    <li>Free point</li>
+    <li>Intersection point of a curve and a line</li>
+    <li>Point on a curve (closest point to another point)</li>
+    <li>Point on a curve (with a defined geodesic position)</li>
+    <li>Centroid of several point</li>
+    <li>Transformed point (by any planar transform)</li>
+  </ul>
+  <li>Linear objects:</li>
+  <ul>
+    <li>Line segments (from 2 points)</li>
+    <li>Straight lines
+    <ul>
+      <li>From 2 points</li>
+      <li>Parallel to a line through a point</li>
+      <li>Orthogonal to a line through a point</li>
+      <li>Median of 2 points</li>
+      <li>Radical axis of 2 circle</li>
+    </ul>
+    </li>
+    <li>Line arcs (from 2 points, bisectors, reflexion of a ray on a curve...)</li>
+    <li>Polyline (from a series of points)</li>
+  </ul>
+  <li>Circles</li>
+  <ul>
+    <li>From center and a point belonging to the circle</li>
+    <li>From center and radius (given as distance measure)</li>
+    <li>From 2 diameter points</li>
+    <li>From 3 points on the circle</li>
+  </ul>
+  <li>Circle Arcs</li>
+  <ul>
+    <li>Circle arc from 3 points</li>
+    <li>Circle arc from 3 points, with specific orientation</li>
+  </ul>
+  <li>Curves</li>
+  <ul>
+    <li>Bezier curve from 4 points</li>
+    <li>Composition of several curves</li>
+  </ul>
+</ul>
+</p>
+
+<h3>Measures on shapes</h3>
+<ul>
+  <li>Distance/length measure</li>
+  <ul>
+    <li>Closest distance of a point to a shape</li>
+    <li>Radius of a circle</li>
+  </ul>
+  <li>Signed distance measure</li>
+  <li>Angle measure</li>
+  <ul>
+    <li>Signed angle between 3 points</li>
+    <li>Horizontal angle of a line or a linear object</li>
+    <li>Horizontal angle of 2 points</li>
+  </ul>
+  <li>Counting measures</li>
+</ul>
+
+<h3>Transforms</h3>
+<ul>
+  <li>Translation by the vector joining 2 points</li>
+  <li>Rotation around a point with a given angle</li>
+  <li>Line symetry</li>
+  <li>Point symetry</li>
+  <li>Circle inversion</li>
+</ul>
+
+
+<h2>To be implemented:</h2>
+<p>
+Some features are still lacking and should be implemented in future versions:
+<ul>
+  <li>Copy/Paste of graphical items</li>
+  <li>Export to SVG, PNG...</li>
+  <li>management of complex structures: graphs, tilings...</li>
+  <li>display of dependency graph</li>
+</ul>
+</p>
+
+<p><br></p>
+<p><br></p>
+
+
+
+<div id="footer">
+
+<hr style="width: 100%; height: 2px;">
+
+<div style="text-align: right;">
+<a href="http://sourceforge.net">
+<img src="http://sflogo.sourceforge.net/sflogo.php?group_id=183902&amp;type=2"
+ width="125" height="37" border="0" alt="SourceForge.net Logo" /></a>
+</div>
+
+</div>  <!-- end of footer -->
+
+
+
+</div> <!-- end of contents -->
+
+
+</div> <!-- end of container -->
+
+
+</body>
+</html>

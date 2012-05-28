@@ -68,6 +68,7 @@ public aspect SerializePeople {
         	{
         		Main.people.add(person);
         	}
+        	inputStream.close();
         } catch (EOFException ex) {
         	
         } catch (FileNotFoundException e) {
@@ -88,6 +89,7 @@ public aspect SerializePeople {
         	outputStream = new ObjectOutputStream(new FileOutputStream(filename));
 			for (Person person : Main.people)
 				outputStream.writeObject(person);
+			outputStream.close();
         } catch (FileNotFoundException e) {
         	e.printStackTrace();
 		} catch (IOException e) {

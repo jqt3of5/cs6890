@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg     xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="200mm" height="200mm"    
+    viewBox="-10 -10 20 20"
+>
+  <g fill="Red" stroke="Black" stroke-width="1.0px">
+    <circle x="-8.062500" y="8.031250" r="3.00"/>
+  </g>
+  <g fill="Red" stroke="Black" stroke-width="1.0px">
+    <circle x="-7.937500mm" y="-7.968750mm" r="3.000000mm"/>
+  </g>
+  <g fill="Red" stroke="Black" stroke-width="1.0px">
+    <circle x="8.000000mm" y="-0.031250mm" r="3.000000mm"/>
+  </g>
+</svg>
+

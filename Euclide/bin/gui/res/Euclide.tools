@@ -1,0 +1,175 @@
+# File for definition of tools of software Euclide
+#
+# This file must be located in "/bin/gui/res/Euclide.tools"
+#
+# List of arguments has the form:
+# AddDependentElement DynamicShape2D Class[]{Class1 Class2 ...}
+# or:
+# AddDependentElement DynamicShape2D Class[]{Class1 Class2 ...} Object[]{param1 param1 ... }
+# where Class 1, Class2... are the classes of the geometric objects which
+# are required for building the object (usually, they are subclasses of
+# Shape2D, Transform2D, Measure2D, or Assertion2D).
+# Paramters param1, param2... are additional parameters for specific classes.
+#
+# Ex:
+# addMedian2Points=AddDependentElement Median2Points2D Class[]{Point2D Point2D}
+# addLineSegment=AddDependentElement LineArc2Points2D Class[]{Point2D Point2D} Object[]{0.0 1.0}
+#
+# Items marked with '#' are commented, and are in development.
+# Items marked with '##' are no longer used, as they are replaced by a more
+# general item.
+
+##--- Definition of tools for points
+
+#addFreePoint=AddFreePointTool
+#addIntersection2Lines=AddDependentElement Intersection2StraightObjects2D Class[]{StraightObject2D StraightObject2D}
+#addIntersectionLineCircle=AddIntersectionLineCircleTool
+#addIntersectionsLineCurve=AddDependentElement IntersectionLineCurve2D Class[]{StraightObject2D Curve2D}
+#addIntersection2Circles=AddIntersection2CirclesTool
+#addCentroidNPoints=AddDependentElement CentroidNPoints2D Class[]{Point2D[]}
+#addCircleCenter=AddDependentElement CircleCenter2D Class[]{Circle2D}
+#addMidPoint2Points=AddDependentElement MidPoint2Points2D Class[]{Point2D Point2D}
+###addPointOnLine=AddPointOnLineTool
+###addPointOnCircle=AddPointOnCircleTool
+#addPointOnCurve=AddPointOnCurveTool
+#addPoint2Values=AddDependentElement Point2Values2D Class[]{Measure2D Measure2D}
+#addPointOnCurvePosition=AddDependentElement PointOnCurvePosition2D Class[]{Curve2D Measure2D}
+###addPointRelativePoint=AddDependentElement PointRelativePoint2D Class[]{Point2D Point2D}
+#addPointRelativePoint=AddPointRelativeToPointTool
+#addPointRelative3Points=AddDependentElement PointRelative3Points2D Class[]{Point2D Point2D Point2D Point2D}
+#addPointSet=AddDependentElement PointSetNPoints2D Class[]{Point2D[]}
+#addBiPoint=AddBiPointTool
+
+##--- Definition of tools for lines
+
+#addStraightLine=AddDependentElement StraightLine2Points2D Class[]{Point2D Point2D}
+#addLinePointAngle=AddDependentElement StraightLinePointAngle2D Class[]{Point2D AngleMeasure2D}
+#addLineSegment=AddDependentElement LineSegment2Points2D Class[]{Point2D Point2D}
+#addRay2Points=AddDependentElement Ray2Points2D Class[]{Point2D Point2D}
+#addMedian2Points=AddDependentElement Median2Points2D Class[]{Point2D Point2D}
+#addParallelLine=AddDependentElement ParallelLine2D Class[]{StraightObject2D Point2D}
+#addParallelLineDistance=AddDependentElement ParallelLineDistance2D Class[]{StraightObject2D Measure2D}
+#addPerpendicularLine=AddDependentElement PerpendicularLine2D Class[]{StraightObject2D Point2D}
+#addRadicalLine2Circles=AddDependentElement RadicalLine2Circles2D Class[]{Circle2D Circle2D}
+
+
+##--- Definition of tools for rays
+
+#addBisector2Lines=AddDependentElement Bisector2Lines2D Class[]{StraightObject2D StraightObject2D Boolean}
+##addInvertedBisector2Lines=AddDependentElement InvertedBisector2Lines2D Class[]{StraightObject2D StraightObject2D}
+#addBisector3Points=AddDependentElement Bisector3Points2D Class[]{Point2D Point2D Point2D}
+#addReflectedRay=AddDependentElement ReflectedRay2D Class[]{Ray2D SmoothCurve2D}
+
+
+##--- Definition of tools for tangents
+
+#addTangentCircleLine=AddDependentElement TangentCircleLine2D Class[]{Circle2D StraightObject2D}
+#addTangentRayCurvePoint=AddDependentElement TangentRayCurvePoint2D Class[]{SmoothCurve2D Point2D}
+##addTangent2CirclesDD=AddDependentElement Tangent2Circles2D Class[]{Circle2D Circle2D} Object[]{true true}
+##addTangent2CirclesDI=AddDependentElement Tangent2Circles2D Class[]{Circle2D Circle2D} Object[]{true false}
+##addTangent2CirclesID=AddDependentElement Tangent2Circles2D Class[]{Circle2D Circle2D} Object[]{false true}
+##addTangent2CirclesII=AddDependentElement Tangent2Circles2D Class[]{Circle2D Circle2D} Object[]{false false}
+#addTangent2Circles=AddDependentElement Tangent2Circles2D Class[]{Circle2D Circle2D Boolean Boolean}
+
+
+##--- Definition of tools for circles
+
+#addCircle2Points=AddDependentElement Circle2Points2D Class[]{Point2D Point2D}
+#addCircle3Points=AddDependentElement Circle3Points2D Class[]{Point2D Point2D Point2D}
+#addCircleDiameter=AddDependentElement CircleDiameter2D Class[]{Point2D Point2D}
+#addCircleCenterRadius=AddDependentElement CirclePointRadius2D Class[]{Point2D Measure2D}
+#addOrthogonalCircle=AddDependentElement OrthogonalCircle2D Class[]{Circle2D Point2D}
+#addOsculatingCircle=AddDependentElement OsculatingCircle2D Class[]{SmoothCurve2D Point2D}
+#addCircleArc3Points=AddDependentElement CircleArc3Points2D Class[]{Point2D Point2D Point2D}
+##addCircleArcDirect=AddDependentElement CircleArcCenter2Points2D Class[]{Point2D Point2D Point2D} Object[]{true}
+##addCircleArcIndirect=AddDependentElement CircleArcCenter2Points2D Class[]{Point2D Point2D Point2D} Object[]{false}
+#addCircleArc=AddDependentElement CircleArcCenter2Points2D Class[]{Point2D Point2D Point2D Boolean}
+##addTransformedCircle=AddDependentElement TransformedCircle2D Class[]{Circle2D Transform2D}
+#addClippedCircle=AddDependentElement ClippedCircle2D Class[]{Circle2D Box2D}
+
+
+##--- Definition of tools for conics
+
+#addEllipse3Points=AddDependentElement Ellipse3Points2D Class[]{Point2D Point2D Point2D}
+#addEllipse2Focus=AddDependentElement Ellipse2Focus2D Class[]{Point2D Point2D Measure2D}
+
+#addParabola2Points=AddDependentElement Parabola2Points2D Class[]{Point2D Point2D}
+#addParabolaLinePoint=AddDependentElement ParabolaLinePoint2D Class[]{StraightObject2D Point2D}
+
+#addHyperbola3Points=AddDependentElement Hyperbola3Points2D Class[]{Point2D Point2D Point2D}
+
+
+##--- Definition of tools for other curves
+
+#addSubCurve2Points=AddDependentElement SubCurve2D Class[]{Curve2D Point2D Point2D}
+#addBezierCurve4Points=AddDependentElement BezierCurve4Points2D Class[]{Point2D Point2D Point2D Point2D}
+#addPolyline=AddDependentElement PolylineNPoints2D Class[]{Point2D[]}
+#addCurveToPolyline=AddDependentElement CurveToPolyline2D Class[]{ContinuousCurve2D Measure2D}
+#addReverseCurve=AddDependentElement ReversedCurve2D Class[]{Curve2D}
+#addPolySmoothCurve=AddDependentElement PolySmoothCurveNCurves2D Class[]{SmoothCurve2D[]}
+#addReuleaux2Points=AddDependentElement ReuleauxTriangle2Points2D Class[]{Point2D Point2D}
+
+
+##--- Definition of tools for polygons
+
+#addPolygonNPoints=AddDependentElement PolygonNPoints2D Class[]{Point2D[]}
+#addSquare2Points=AddDependentElement Square2Points2D Class[]{Point2D Point2D}
+#addEquiTriangle2Points=AddDependentElement EquiTriangle2Points2D Class[]{Point2D Point2D}
+#addPolygon3Points=AddDependentElement RegularPolygon3Points2D Class[]{Point2D Point2D Point2D}
+#addPolygonCenter2Points=AddDependentElement RegularPolygonCenter2Points2D Class[]{Point2D Point2D Point2D}
+#addBox2Points=AddDependentElement Box2Points2D Class[]{Point2D Point2D}
+#addBoundingBox=AddDependentElement BoundingBoxCurve2D Class[]{Curve2D}
+
+
+##--- Definition of tools for transforms
+
+#addTranslation2Points=AddDependentElement Translation2Points2D Class[]{Point2D Point2D}
+#addRotation3Points=AddDependentElement Rotation3Points2D Class[]{Point2D Point2D Point2D}
+#addCircleInversion=AddDependentElement CircleInversionCircle2D Class[]{Circle2D}
+#addLineSymmetry=AddDependentElement LineSymmetryLine2D Class[]{StraightObject2D}
+#addPointSymmetry=AddDependentElement PointSymmetryPoint2D Class[]{Point2D}
+#addTransformedShape=AddDependentElement TransformedShape2D Class[]{Shape2D Transform2D}
+
+
+##--- Definition of tools for measures
+
+#addLengthLineSegment=AddDependentElement LengthLineSegment2D Class[]{LineArc2D}
+#addDistance2Points=AddDependentElement Distance2Points2D Class[]{Point2D Point2D}
+#addDistancePointCurve=AddDependentElement DistancePointCurve2D Class[]{Curve2D Point2D}
+#addSignedDistancePointCurve=AddDependentElement SignedDistancePointCurve2D Class[]{Curve2D Point2D}
+#addPowerPointCircle=AddDependentElement PowerPointCircle2D Class[]{Point2D Circle2D}
+#addRadiusCircle=AddDependentElement RadiusCircle2D Class[]{Circle2D}
+
+#addAreaPolygon=AddDependentElement AreaPolygon2D Class[]{Polygon2D}
+#addSignedAreaPolygon=AddDependentElement SignedAreaPolygon2D Class[]{Polygon2D}
+
+#addCurvePositionPoint=AddDependentElement CurvePositionPoint2D Class[]{Curve2D Point2D}
+
+#addAngle2Lines=AddDependentElement Angle2Lines2D Class[]{StraightObject2D StraightObject2D}
+#addHorizontalAngle=AddDependentElement HorizontalAngleLine2D Class[]{StraightObject2D}
+
+
+##--- Definition of tools for predicates
+
+#addIsPointInside=AddDependentElement IsPointInside2D Class[]{Point2D OrientedCurve2D}
+#addIsColinearPoints=AddDependentElement IsColinearPoints2D Class[]{Point2D Point2D Point2D}
+
+
+##--- Definition of tools for vectors
+
+#addVector2Points=AddDependentElement Vector2Points2D Class[]{Point2D Point2D}
+
+
+##--- Definition of tools for other geometric objects
+
+#addMeasureLabel=AddDependentElement MeasureLabel2D Class[]{Point2D Measure2D}
+#addPredicateLabel=AddDependentElement PredicateLabel2D Class[]{Point2D Boolean}
+
+#addPointLocus=AddDependentElement PointLocus2D Class[]{Point2D}
+
+
+##--- Definition of other types of tools
+
+#select=SelectShapeTool
+#movePoint=MovePointTool
+
