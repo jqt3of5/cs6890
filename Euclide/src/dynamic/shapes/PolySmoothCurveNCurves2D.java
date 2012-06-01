@@ -64,7 +64,7 @@ public class PolySmoothCurveNCurves2D extends DynamicShape2D {
 			if(curve instanceof DynamicShape2D)
 				this.shapes.add((DynamicShape2D) curve);
 
-		update();
+		//update();
 	}
 	
 	/**
@@ -91,7 +91,7 @@ public class PolySmoothCurveNCurves2D extends DynamicShape2D {
 			if(curve instanceof DynamicShape2D)
 				this.shapes.add((DynamicShape2D) curve);
 
-		update();
+		//update();
 	}
 	
 	/**
@@ -114,7 +114,7 @@ public class PolySmoothCurveNCurves2D extends DynamicShape2D {
 			if(curve instanceof DynamicShape2D)
 				this.shapes.add((DynamicShape2D) curve);
 
-		update();
+	//	update();
 	}
 	
 	

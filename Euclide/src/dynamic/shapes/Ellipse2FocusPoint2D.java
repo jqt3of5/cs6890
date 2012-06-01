@@ -57,7 +57,7 @@ public class Ellipse2FocusPoint2D extends DynamicShape2D{
 		parents.add(point3);
 		parents.trimToSize();
 
-		update(); 
+		//update(); 
 	}
 	
 	@Override

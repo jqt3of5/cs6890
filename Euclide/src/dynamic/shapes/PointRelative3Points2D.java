@@ -77,7 +77,7 @@ public class PointRelative3Points2D extends DynamicShape2D {
 
 		this.parent4 = new Constant2D(alpha);
 		this.parent5 = new Constant2D(beta);
-		update();
+		//update();
 	}
 	
 	/**
@@ -106,7 +106,7 @@ public class PointRelative3Points2D extends DynamicShape2D {
 		parents.add(beta);
 		parents.trimToSize();
 		
-		update();
+		//update();
 	}
 	
 	/**
@@ -173,7 +173,7 @@ public class PointRelative3Points2D extends DynamicShape2D {
 
 		this.parent4 = new Constant2D(alpha);
 		this.parent5 = new Constant2D(beta);
-		update();
+		//update();
 	}	
 	
 	@Override

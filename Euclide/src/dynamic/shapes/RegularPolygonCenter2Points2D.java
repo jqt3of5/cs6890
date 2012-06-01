@@ -62,7 +62,7 @@ public class RegularPolygonCenter2Points2D extends DynamicShape2D {
 		parents.add(point3);
 		parents.trimToSize();
 
-		update();
+		//update();
 	}
 
 	

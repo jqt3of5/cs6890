@@ -56,7 +56,7 @@ public class RegularPolygon3Points2D extends DynamicShape2D {
 		parents.add(point3);
 		parents.trimToSize();
 
-		update();
+		//update();
 	}
 
 	

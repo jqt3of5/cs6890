@@ -20,7 +20,7 @@
  * The Free Software Foundation, Inc., 59 Temple Place, Suite 330,
  * Boston, MA 02111-1307, USA.
  * 
- * Created on 22 déc. 2005
+ * Created on 22 dï¿½c. 2005
  *
  */
 package dynamic.shapes;
@@ -52,7 +52,7 @@ public class Intersection2StraightObjects2D extends DynamicShape2D {
 		parents.add(line2);
 		parents.trimToSize();
 
-		update();
+	//	update();
 	}
 
 	@Override

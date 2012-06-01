@@ -43,7 +43,7 @@ public class Distance2Points2D extends DynamicMeasure2D {
 		parents.add(point1);
 		parents.add(point2);
 		
-		update();
+	//	update();
 	}	
 	
 	@Override

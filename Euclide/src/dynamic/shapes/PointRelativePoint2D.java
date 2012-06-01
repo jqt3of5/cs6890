@@ -68,7 +68,7 @@ public class PointRelativePoint2D extends DynamicMoveablePoint2D {
 		double dy = point2.getY()-point1.getY();
 		this.setParameter(0, dx);
 		this.setParameter(1, dy);
-		update(); 
+		//update(); 
 	}
 	
 	/**
@@ -88,7 +88,7 @@ public class PointRelativePoint2D extends DynamicMoveablePoint2D {
 		this.parameters.add(dy);
 		parameters.trimToSize();
 		
-		update(); 
+		//update(); 
 	}
 	
 	@Override

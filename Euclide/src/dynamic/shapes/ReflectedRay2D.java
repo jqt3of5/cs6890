@@ -20,7 +20,7 @@
  * The Free Software Foundation, Inc., 59 Temple Place, Suite 330,
  * Boston, MA 02111-1307, USA.
  * 
- * Created on 1 févr. 2007
+ * Created on 1 fï¿½vr. 2007
  *
  */
 package dynamic.shapes;
@@ -57,7 +57,7 @@ public class ReflectedRay2D extends DynamicShape2D {
 		parents.add(curve);
 		parents.trimToSize();
 
-		update();
+		//update();
 	}
 	
 	@Override

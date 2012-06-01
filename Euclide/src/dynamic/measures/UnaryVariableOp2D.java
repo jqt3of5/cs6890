@@ -29,7 +29,7 @@ public abstract class UnaryVariableOp2D extends DynamicMeasure2D {
 		this.parent = parent;
 		this.parents.add(parent);
 		
-		update();
+		//update();
 	}
 
 	@Override

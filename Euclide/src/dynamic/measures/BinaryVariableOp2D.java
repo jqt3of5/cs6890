@@ -34,7 +34,7 @@ public abstract class BinaryVariableOp2D extends DynamicMeasure2D {
 		this.parents.add(parent2);
 		this.parents.trimToSize();
 		
-		update();
+	//	update();
 	}
 
 	@Override

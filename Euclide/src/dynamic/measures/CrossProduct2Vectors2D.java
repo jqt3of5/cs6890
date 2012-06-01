@@ -43,7 +43,7 @@ public class CrossProduct2Vectors2D extends DynamicMeasure2D{
 		parents.add(vector1);
 		parents.add(vector2);
 
-		update(); 
+		//update(); 
 	}
 
 	@Override

@@ -41,7 +41,7 @@ public class RadiusCircle2D extends DynamicMeasure2D {
 		parents.add(circle);
 		parents.trimToSize();
 		
-		update();
+		//update();
 	}
 	
 	@Override

@@ -60,7 +60,7 @@ public class Intersection2Polygons2D extends DynamicShape2D{
 		parents.add(poly2);
 		parents.trimToSize();
 		
-		update(); 
+		//update(); 
 	}
 	
 	@Override

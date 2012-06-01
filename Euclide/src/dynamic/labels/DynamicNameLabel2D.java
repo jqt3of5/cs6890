@@ -4,7 +4,7 @@
  * 
  * Distributed under the LGPL License.
  *
- * Created: 28 févr. 09
+ * Created: 28 fï¿½vr. 09
  */
 package dynamic.labels;
 
@@ -38,7 +38,7 @@ public class DynamicNameLabel2D extends DynamicLabel2D {
         parents.add(position);
         parents.trimToSize();
         
-        update();
+    //    update();
     }
 
     /* (non-Javadoc)

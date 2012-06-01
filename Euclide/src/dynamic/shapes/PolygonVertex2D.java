@@ -52,7 +52,7 @@ public class PolygonVertex2D extends DynamicShape2D{
 		parents.add(parent1);
 		this.parameters.add(num);
 		
-		update(); 
+		//update(); 
 	}
 
 	public PolygonVertex2D(DynamicShape2D polygon, DynamicMeasure2D index){
@@ -64,7 +64,7 @@ public class PolygonVertex2D extends DynamicShape2D{
 		parents.add(index);
 		parents.trimToSize();
 		
-		update(); 
+		//update(); 
 	}
 
 
@@ -95,7 +95,7 @@ public class PolygonVertex2D extends DynamicShape2D{
 		int num = (int) Math.round(polygon.getBoundary().project(point));
 		this.parent2 = new CountWrapper2D(num);
 		this.parameters.add(num);
-		update(); 
+		//update(); 
 	}
 	
 	@Override

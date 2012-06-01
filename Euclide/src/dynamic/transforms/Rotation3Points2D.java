@@ -48,7 +48,7 @@ public class Rotation3Points2D extends DynamicTransform2D{
 		parents.add(point2);
 		parents.add(point3);
 
-		update(); 
+	//	update(); 
 	}
 
 	@Override

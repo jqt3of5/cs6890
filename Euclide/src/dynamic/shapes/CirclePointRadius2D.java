@@ -48,7 +48,7 @@ public class CirclePointRadius2D extends DynamicShape2D {
 		parents.add(radius);
 		parents.trimToSize();
 
-		update(); 
+		//update(); 
 	}
 	
 	@Override

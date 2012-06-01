@@ -61,7 +61,7 @@ public class ReuleauxTriangle2Points2D extends DynamicShape2D{
 		this.polyCurve.addCurve(arc2);
 		this.polyCurve.addCurve(arc3);
 		
-		update();
+	//	update();
 	}
 	
 	@Override

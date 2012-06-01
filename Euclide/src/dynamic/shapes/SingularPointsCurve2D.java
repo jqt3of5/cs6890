@@ -51,7 +51,7 @@ public class SingularPointsCurve2D extends DynamicShape2D{
 		
 		parents.add(curve);
 		
-		update(); 
+		//update(); 
 	}
 	
 	

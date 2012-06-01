@@ -53,7 +53,7 @@ public class PointSetNPoints2D extends DynamicShape2D {
 		this.points.ensureCapacity(points.length);
 		for(int i=0; i<points.length; i++)
 			this.points.add(points[i]);
-		update();
+	//	update();
 	}
 
 	/**
@@ -63,7 +63,7 @@ public class PointSetNPoints2D extends DynamicShape2D {
 	public PointSetNPoints2D(DynamicShape2D point) {
 		super();
 		this.points.add(point);
-		update();
+	//	update();
 	}
 
 	@Override

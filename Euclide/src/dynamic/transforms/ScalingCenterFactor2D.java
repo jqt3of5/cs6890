@@ -52,7 +52,7 @@ public class ScalingCenterFactor2D extends DynamicTransform2D {
 		parents.add(center);
 		parents.add(factor);
 		
-		update(); 
+		//update(); 
 	}
 
 	/* (non-Javadoc)

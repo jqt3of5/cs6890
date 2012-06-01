@@ -50,7 +50,7 @@ public class OrthogonalCircle2D extends DynamicShape2D{
 		parents.add(point);
 		parents.trimToSize();
 
-		update(); 
+	//	update(); 
 	}
 	
 	@Override

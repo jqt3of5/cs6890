@@ -44,7 +44,7 @@ public class PredicateLabel2D extends DynamicLabel2D {
 		parents.add(predicate);
 		parents.trimToSize();
 		
-		update();
+		//update();
 	}
 
 	@Override

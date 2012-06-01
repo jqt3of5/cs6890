@@ -50,7 +50,7 @@ public class ComposedTransform2D extends DynamicTransform2D{
 		parents.add(trans1);
 		parents.add(trans2);
 
-		update(); 
+		//update(); 
 	}
 
 	@Override

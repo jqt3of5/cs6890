@@ -56,7 +56,7 @@ public class PointOnBoundary2D extends DynamicMoveablePoint2D {
 		Curve2D curve = ((Domain2D) parent1.getShape()).getBoundary();
 		Point2D point = (Point2D) pointer.getShape();
 		this.pos = curve.project(point);
-		update(); 
+	//	update(); 
 	}
 
 	@Override

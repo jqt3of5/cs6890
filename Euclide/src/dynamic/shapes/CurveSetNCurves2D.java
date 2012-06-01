@@ -50,7 +50,7 @@ public class CurveSetNCurves2D extends DynamicShape2D {
 		DynamicArray2D array = new DynamicArray2D(curves);
 		
 		initializeWithArray(array);
-		update();
+		//update();
 	}
 	
 	/**
@@ -61,7 +61,7 @@ public class CurveSetNCurves2D extends DynamicShape2D {
 		super();
 		
 		initializeWithArray(array);
-		update();
+		//update();
 	}
 	
 	private void initializeWithArray(DynamicArray2D array) {

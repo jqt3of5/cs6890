@@ -58,7 +58,7 @@ public class BoundarySetNBoundaries2D extends DynamicShape2D {
 			if(curve instanceof DynamicShape2D)
 				this.shapes.add((DynamicShape2D) curve);
 
-		update();
+	//	update();
 	}	
 	
 	@Override

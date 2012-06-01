@@ -20,7 +20,7 @@
  * The Free Software Foundation, Inc., 59 Temple Place, Suite 330,
  * Boston, MA 02111-1307, USA.
  * 
- * Created on 22 déc. 2005
+ * Created on 22 dï¿½c. 2005
  *
  */
 package dynamic.shapes;
@@ -46,7 +46,7 @@ public class FreePoint2D extends DynamicMoveablePoint2D {
 		parameters.add(y);
 		parameters.trimToSize();
 		
-		update();
+		//update();
 	}
 
 	@Override

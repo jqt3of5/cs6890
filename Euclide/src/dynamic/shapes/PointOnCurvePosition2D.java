@@ -54,7 +54,7 @@ public class PointOnCurvePosition2D extends DynamicShape2D{
 		parents.add(curve);
 		parents.add(position);
 
-		update(); 
+		//update(); 
 	}
 	
 	

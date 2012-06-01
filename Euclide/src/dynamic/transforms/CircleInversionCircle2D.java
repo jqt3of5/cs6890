@@ -42,7 +42,7 @@ public class CircleInversionCircle2D extends DynamicTransform2D {
 
 		parents.add(circle);
 
-		update(); 
+		//update(); 
 	}
 
 	@Override

@@ -47,7 +47,7 @@ public class CurveLocus2D extends DynamicShape2D {
 		parents.trimToSize();
 		this.defined = true;
 
-		update();
+		//update();
 	}
 		
 	@Override

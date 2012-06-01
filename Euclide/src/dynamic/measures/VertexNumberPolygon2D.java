@@ -41,7 +41,7 @@ public class VertexNumberPolygon2D extends DynamicMeasure2D {
 		
 		parents.add(polygon);
 		
-		update();
+		//update();
 	}
 	
 	@Override

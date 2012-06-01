@@ -45,7 +45,7 @@ public class Angle2Lines2D extends DynamicMeasure2D {
 		parents.add(line1);
 		parents.add(line2);
 		
-		update();
+	//	update();
 	}
 	
 	@Override

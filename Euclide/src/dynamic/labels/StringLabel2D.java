@@ -4,7 +4,7 @@
  * 
  * Distributed under the LGPL License.
  *
- * Created: 28 févr. 09
+ * Created: 28 fï¿½vr. 09
  */
 package dynamic.labels;
 
@@ -29,7 +29,7 @@ public class StringLabel2D extends DynamicLabel2D {
      * 
      */
     public StringLabel2D(DynamicShape2D position, String text) {
-        super();
+    	super();
         this.parent1 = position;
         label.setText(text);
         
@@ -39,7 +39,7 @@ public class StringLabel2D extends DynamicLabel2D {
         parameters.add(text);
         parameters.trimToSize();
         
-        update();
+     //   update();
     }
 
     /* (non-Javadoc)

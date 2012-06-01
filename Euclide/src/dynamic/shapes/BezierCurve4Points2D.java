@@ -56,7 +56,7 @@ public class BezierCurve4Points2D extends DynamicShape2D {
 		parents.add(point4);
 		parents.trimToSize();
 		
-		update(); 
+	//	update(); 
 	}
 
 	@Override

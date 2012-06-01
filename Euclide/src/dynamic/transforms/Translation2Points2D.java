@@ -46,7 +46,7 @@ public class Translation2Points2D extends DynamicTransform2D{
 		parents.add(point1);
 		parents.add(point2);
 
-		update(); 
+	//	update(); 
 	}
 
 	@Override

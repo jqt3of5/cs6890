@@ -53,7 +53,7 @@ public class EquiTriangle2Points2D extends DynamicShape2D {
 		parents.add(point2);
 		parents.trimToSize();
 
-		update();
+		//update();
 	}
 
 	

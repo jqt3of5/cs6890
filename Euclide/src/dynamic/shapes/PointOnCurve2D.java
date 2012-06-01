@@ -54,7 +54,7 @@ public class PointOnCurve2D extends DynamicMoveablePoint2D {
 		Curve2D curve = (Curve2D) parent1.getShape();
 		Point2D point = (Point2D) parent2.getShape();
 		this.pos = curve.project(point);
-		update(); 
+		//update(); 
 	}
 
 	public PointOnCurve2D(DynamicShape2D parent1, DynamicMeasure2D parent2){
@@ -65,7 +65,7 @@ public class PointOnCurve2D extends DynamicMoveablePoint2D {
 		
 		// compute position of point on the curve
 		this.pos = parent2.getMeasure().getValue();
-		update(); 
+		//update(); 
 	}
 
 	public PointOnCurve2D(DynamicShape2D parent1, double pos){
@@ -76,7 +76,7 @@ public class PointOnCurve2D extends DynamicMoveablePoint2D {
 		
 		// compute position of point on the curve
 		this.pos = pos;
-		update(); 
+		//update(); 
 	}
 
 	@Override

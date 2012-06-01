@@ -66,7 +66,7 @@ public class GeodesicPointsOnCurve2D extends DynamicShape2D{
 		parents.add(number);
 		parents.trimToSize();
 		
-		update(); 
+		//update(); 
 	}	
 	
 	@Override

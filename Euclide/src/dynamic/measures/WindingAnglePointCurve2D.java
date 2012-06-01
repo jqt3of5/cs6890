@@ -45,7 +45,7 @@ public class WindingAnglePointCurve2D extends DynamicMeasure2D {
 		parents.add(line);
 		parents.add(point);
 		
-		update();
+	//	update();
 	}
 	
 	@Override

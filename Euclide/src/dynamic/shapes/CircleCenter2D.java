@@ -44,7 +44,7 @@ public class CircleCenter2D extends DynamicShape2D {
 		parents.add(circle);
 		parents.trimToSize();
 
-		update(); 
+		//update(); 
 	}
 
 	@Override

@@ -56,7 +56,7 @@ public class ClosedPolylineNPoints2D extends DynamicShape2D {
 		for(int i=0; i<points.length; i++)
 			this.points.add(points[i]);
 		
-		update();
+		//update();
 	}
 
 	public ClosedPolylineNPoints2D(DynamicArray2D array) {
@@ -70,7 +70,7 @@ public class ClosedPolylineNPoints2D extends DynamicShape2D {
 			if(point instanceof DynamicShape2D)
 				this.points.add((DynamicShape2D)point);
 		
-		update();
+	//	update();
 	}
 
 	/**
@@ -80,7 +80,7 @@ public class ClosedPolylineNPoints2D extends DynamicShape2D {
 	public ClosedPolylineNPoints2D(DynamicShape2D point) {
 		super();
 		this.points.add(point);
-		update();
+	//	update();
 	}
 
 	

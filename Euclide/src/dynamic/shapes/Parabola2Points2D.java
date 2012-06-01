@@ -46,7 +46,7 @@ public class Parabola2Points2D extends DynamicShape2D {
 		parents.add(focus);
 		parents.trimToSize();
 
-		update();
+		//update();
 	}
 	
 	@Override

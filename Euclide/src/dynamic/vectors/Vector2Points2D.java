@@ -43,7 +43,7 @@ public class Vector2Points2D extends DynamicVector2D{
 		parents.add(point1);
 		parents.add(point2);
 
-		update(); 
+//		update(); 
 	}
 
 	@Override

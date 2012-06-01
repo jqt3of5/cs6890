@@ -49,7 +49,7 @@ public class ClosedPolylinePointSet2D extends DynamicShape2D {
         
         parents.add(pointSet);
         
-        update();
+      //  update();
 	}
 
 	@Override

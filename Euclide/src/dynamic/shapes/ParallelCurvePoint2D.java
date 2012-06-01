@@ -67,7 +67,7 @@ public class ParallelCurvePoint2D extends DynamicShape2D{
 		parents.add(distanceMeasure);
 		parents.trimToSize();
 
-		update(); 
+		//update(); 
 	}
 		
 	@Override

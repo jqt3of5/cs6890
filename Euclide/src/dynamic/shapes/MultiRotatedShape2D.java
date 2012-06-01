@@ -58,7 +58,7 @@ public class MultiRotatedShape2D extends DynamicShape2D {
 		parents.add(count);
 		parents.trimToSize();
 
-		update(); 
+		//update(); 
 	}
 	
 	@Override

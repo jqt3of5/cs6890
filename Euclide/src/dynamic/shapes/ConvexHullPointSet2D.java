@@ -51,7 +51,7 @@ public class ConvexHullPointSet2D extends DynamicShape2D {
         
         parents.add(pointSet);
         
-        update();
+       // update();
 	}
 
 	@Override

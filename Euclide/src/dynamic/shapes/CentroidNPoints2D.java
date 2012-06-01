@@ -52,7 +52,7 @@ public class CentroidNPoints2D extends DynamicShape2D {
 		for(int i=0; i<points.length; i++)
 			this.points.add(points[i]);
 		
-		update();
+	//	update();
 	}	
 
 	@Override

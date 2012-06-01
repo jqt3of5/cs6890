@@ -20,7 +20,7 @@
  * The Free Software Foundation, Inc., 59 Temple Place, Suite 330,
  * Boston, MA 02111-1307, USA.
  * 
- * Created on 22 déc. 2005
+ * Created on 22 dï¿½c. 2005
  *
  */
 package dynamic.shapes;
@@ -55,7 +55,7 @@ public class Bisector2Lines2D extends DynamicShape2D{
 		parents.add(line2);
 		parents.trimToSize();
 		
-		update();
+		//update();
 	}
 	
 	public Bisector2Lines2D(DynamicShape2D line1, DynamicShape2D line2, 
@@ -69,7 +69,7 @@ public class Bisector2Lines2D extends DynamicShape2D{
 		parents.add(pred);
 		parents.trimToSize();
 		
-		update();
+	//	update();
 	}
 
 

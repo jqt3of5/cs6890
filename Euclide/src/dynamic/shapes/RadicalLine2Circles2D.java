@@ -50,7 +50,7 @@ public class RadicalLine2Circles2D extends  DynamicShape2D{
 		parents.add(circle2);
 		parents.trimToSize();
 
-		update(); 
+		//update(); 
 	}
 	
 	@Override

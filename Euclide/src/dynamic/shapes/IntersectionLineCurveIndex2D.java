@@ -57,7 +57,7 @@ public class IntersectionLineCurveIndex2D extends DynamicShape2D{
 		parents.add(index);
 		parents.trimToSize();
 
-		update();
+		//update();
 	}
 	
 	@Override

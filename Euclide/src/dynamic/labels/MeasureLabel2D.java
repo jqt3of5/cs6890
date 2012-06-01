@@ -45,7 +45,7 @@ public class MeasureLabel2D extends DynamicLabel2D {
 		parents.add(measure);
 		parents.trimToSize();
 		
-		update();
+	//	update();
 	}
 
 	@Override

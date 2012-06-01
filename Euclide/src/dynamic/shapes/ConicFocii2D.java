@@ -45,7 +45,7 @@ public class ConicFocii2D extends DynamicShape2D {
 		parents.add(conic);
 		parents.trimToSize();
 
-		update(); 
+	//	update(); 
 	}
 
 	@Override

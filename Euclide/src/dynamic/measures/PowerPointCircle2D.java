@@ -44,7 +44,7 @@ public class PowerPointCircle2D extends DynamicMeasure2D {
 		parents.add(point);
 		parents.add(circle);
 
-		update();
+		//update();
 	}
 	
 	@Override

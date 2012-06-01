@@ -56,7 +56,7 @@ public class ScalingCenter2Points2D extends DynamicTransform2D {
 		parents.add(point2);
 		parents.trimToSize();
 		
-		update(); 
+		//update(); 
 	}
 
 	/* (non-Javadoc)

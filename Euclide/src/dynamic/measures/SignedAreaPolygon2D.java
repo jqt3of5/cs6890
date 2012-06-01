@@ -41,7 +41,7 @@ public class SignedAreaPolygon2D extends DynamicMeasure2D {
 
 		parents.add(polygon);
 
-		update();
+		//update();
 	}
 	
 	@Override

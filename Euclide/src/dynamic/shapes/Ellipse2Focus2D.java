@@ -63,7 +63,7 @@ public class Ellipse2Focus2D extends DynamicShape2D{
 		parents.add(chord);
 		parents.trimToSize();
 
-		update(); 
+	//	update(); 
 	}
 	
 	@Override

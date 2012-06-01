@@ -59,7 +59,7 @@ public class PolygonNPoints2D extends DynamicShape2D {
 			this.points.add(point);
 		}
 
-		update();
+	//	update();
 	}
 
 	/**
@@ -79,7 +79,7 @@ public class PolygonNPoints2D extends DynamicShape2D {
 		for (DynamicObject2D point : shapes)
 			if (point instanceof DynamicShape2D)
 				this.points.add((DynamicShape2D) point);
-		this.update();
+		//this.update();
 	}
 
 	@Override

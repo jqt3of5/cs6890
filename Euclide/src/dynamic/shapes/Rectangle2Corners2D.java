@@ -4,7 +4,7 @@
  * 
  * Distributed under the LGPL License.
  *
- * Created: 13 déc. 2010
+ * Created: 13 dï¿½c. 2010
  */
 package dynamic.shapes;
 
@@ -39,7 +39,7 @@ public class Rectangle2Corners2D extends DynamicShape2D {
 		parents.add(point2);
 		parents.trimToSize();
 
-		update();
+		//update();
 	}
 	
 	/* (non-Javadoc)

@@ -4,7 +4,7 @@
  * 
  * Distributed under the LGPL License.
  *
- * Created: 14 févr. 10
+ * Created: 14 fï¿½vr. 10
  */
 package dynamic.shapes;
 
@@ -46,7 +46,7 @@ public class PolygonCenterApothemNumber2D extends DynamicShape2D {
 		parents.add(vertexCount);
 		parents.trimToSize();
 
-		update();
+		//update();
 	}
 	
 	@Override

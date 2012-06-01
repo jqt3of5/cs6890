@@ -59,7 +59,7 @@ public class IntersectionLineCircle2D extends DynamicShape2D{
 		parameters.trimToSize();
 
 		this.point = new Point2D();
-		update(); 
+	//	update(); 
 	}
 	
 	@Override

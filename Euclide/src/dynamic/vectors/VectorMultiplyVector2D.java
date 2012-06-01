@@ -43,7 +43,7 @@ public class VectorMultiplyVector2D extends DynamicVector2D{
 		parents.add(vector);
 		parents.add(measure);
 
-		update(); 
+		//update(); 
 	}
 
 	@Override

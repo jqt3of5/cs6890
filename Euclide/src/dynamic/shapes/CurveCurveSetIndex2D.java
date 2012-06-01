@@ -54,7 +54,7 @@ public class CurveCurveSetIndex2D extends DynamicShape2D{
 		parameters.add(num);
 		
 		
-		update(); 
+		//update(); 
 	}
 
 	public CurveCurveSetIndex2D(DynamicShape2D curveSet, DynamicMeasure2D count){
@@ -65,7 +65,7 @@ public class CurveCurveSetIndex2D extends DynamicShape2D{
 		parents.add(curveSet);
 		parents.add(count);
 		
-		update(); 
+		//update(); 
 	}
 
 
@@ -97,7 +97,7 @@ public class CurveCurveSetIndex2D extends DynamicShape2D{
 		
 		parameters.add(num);
 		
-		update(); 
+		//update(); 
 	}
 	
 	@Override

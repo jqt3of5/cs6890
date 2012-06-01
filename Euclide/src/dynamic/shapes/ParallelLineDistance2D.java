@@ -50,7 +50,7 @@ public class ParallelLineDistance2D extends DynamicShape2D{
 		parents.add(distanceMeasure);
 		parents.trimToSize();
 
-		update(); 
+	//	update(); 
 	}
 		
 	@Override

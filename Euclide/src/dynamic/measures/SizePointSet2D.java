@@ -43,7 +43,7 @@ public class SizePointSet2D extends DynamicMeasure2D {
 		
 		parents.add(pointSet);
 		
-		update();
+		//update();
 	}
 	
 	@Override

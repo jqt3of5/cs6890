@@ -47,7 +47,7 @@ public class PolygonCentroid2D extends DynamicShape2D{
 		this.parent1 = parent1;	
 		parents.add(parent1);
 		
-		update(); 
+		//update(); 
 	}
 
 	@Override

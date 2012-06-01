@@ -53,7 +53,7 @@ public class TransformedShape2D extends DynamicShape2D {
 		parents.add(transform);
 		parents.trimToSize();
 
-		update(); 
+		//update(); 
 	}
 	
 	@Override

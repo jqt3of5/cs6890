@@ -61,7 +61,7 @@ public class CircleArcCenter2Points2D extends DynamicShape2D {
 		parents.add(point3);
 		parents.trimToSize();
 
-		update();
+		//update();
 	}	
 
 	public CircleArcCenter2Points2D(DynamicShape2D point1, 
@@ -79,7 +79,7 @@ public class CircleArcCenter2Points2D extends DynamicShape2D {
 
 		parameters.add(direct);
 		
-		update();
+		//update();
 	}
 
 	public CircleArcCenter2Points2D(
@@ -102,7 +102,7 @@ public class CircleArcCenter2Points2D extends DynamicShape2D {
 		parents.trimToSize();
 		parameters.trimToSize();
 
-		update();
+	//	update();
 	}
 
 	@Override

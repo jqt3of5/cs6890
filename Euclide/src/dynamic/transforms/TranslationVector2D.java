@@ -20,7 +20,7 @@
  * The Free Software Foundation, Inc., 59 Temple Place, Suite 330,
  * Boston, MA 02111-1307, USA.
  *
- * Created 2 févr. 08
+ * Created 2 fï¿½vr. 08
  */
 
 package dynamic.transforms;
@@ -48,7 +48,7 @@ public class TranslationVector2D extends DynamicTransform2D {
 
 		parents.add(vector);
 		
-		update(); 
+		//update(); 
 	}
 
 	/* (non-Javadoc)

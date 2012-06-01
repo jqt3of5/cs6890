@@ -44,7 +44,7 @@ public class LineSymmetryLine2D extends DynamicTransform2D{
 		parents.add(line);
 		parents.trimToSize();
 
-		update(); 
+		//update(); 
 	}
 
 	@Override

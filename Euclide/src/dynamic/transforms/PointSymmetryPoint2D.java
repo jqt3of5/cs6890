@@ -43,7 +43,7 @@ public class PointSymmetryPoint2D extends DynamicTransform2D {
 		parents.add(point);
 		parents.trimToSize();
 
-		update(); 
+		//update(); 
 	}
 
 	@Override

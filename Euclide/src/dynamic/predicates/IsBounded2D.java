@@ -47,7 +47,7 @@ public class IsBounded2D extends DynamicPredicate2D {
 		parents.add(shape);
 		parents.trimToSize();
 		
-		update();
+		//update();
 	}
 	
 	@Override

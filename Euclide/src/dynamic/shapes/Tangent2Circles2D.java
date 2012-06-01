@@ -77,7 +77,7 @@ public class Tangent2Circles2D extends DynamicShape2D{
 		parameters.add(c2Direct);
 		parameters.trimToSize();
 		
-		update(); 
+		//update(); 
 	}
 	
 	public Tangent2Circles2D(DynamicShape2D c1, DynamicShape2D c2, 
@@ -93,7 +93,7 @@ public class Tangent2Circles2D extends DynamicShape2D{
 		parents.add(c2Direct);
 		parents.trimToSize();
 
-		update(); 
+	//	update(); 
 	}
 	
 	@Override

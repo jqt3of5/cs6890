@@ -69,7 +69,7 @@ public class Intersection2Circles2D extends DynamicShape2D{
 		parameters.add(num);
 		parameters.trimToSize();
 
-		update(); 
+		//update(); 
 	}
 	
 	@Override

@@ -42,7 +42,7 @@ public class HorizontalAngleLine2D extends DynamicMeasure2D {
 		
 		parents.add(line);
 		
-		update();
+	//	update();
 	}
 	
 	@Override

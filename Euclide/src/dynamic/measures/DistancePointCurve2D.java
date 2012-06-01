@@ -44,7 +44,7 @@ public class DistancePointCurve2D extends DynamicMeasure2D {
 		parents.add(curve);
 		parents.add(point);
 
-		update();
+		//update();
 	}
 	
 	@Override

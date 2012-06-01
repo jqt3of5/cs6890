@@ -74,7 +74,7 @@ public class BiPoint2D extends DynamicMoveablePoint2D {
 		this.dx = x0-base.getX();
 		this.dy = y0-base.getY();
 		
-		update();
+		//update();
 	}
 
 	public BiPoint2D(DynamicShape2D basePoint, DynamicShape2D location){
@@ -107,7 +107,7 @@ public class BiPoint2D extends DynamicMoveablePoint2D {
 			this.dy = loc.getY()-base.getY();
 		}
 		
-		update();
+	//	update();
 	}
 	
 	@Override

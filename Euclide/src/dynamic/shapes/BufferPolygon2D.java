@@ -53,7 +53,7 @@ public class BufferPolygon2D extends DynamicShape2D{
 		parents.add(parent2);
 		parents.trimToSize();
         
-		update(); 
+		//update(); 
 	}
 
 	@Override
