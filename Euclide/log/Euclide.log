@@ -19,3 +19,77 @@
 2012-06-17 18:31:18,276 INFO  Euclide - (EuclideMainFrame.java:202) - Change current view
 2012-06-17 18:31:18,277 INFO  Euclide - (EuclideMainFrame.java:214) -   change current doc to: NoName2
 2012-06-17 18:31:19,659 INFO  Euclide - (EuclideGui.java:1023) - Remove doc from gui: NoName2
+2012-06-19 11:56:41,512 INFO  Euclide - (Euclide.java:59) - Start programm Euclide
+2012-06-19 11:56:41,623 INFO  Euclide - (Euclide.java:68) - Create GUI
+2012-06-19 11:56:41,780 INFO  Euclide - (GuiBuilder.java:114) - Tools loaded successfully
+2012-06-19 11:56:41,813 INFO  Euclide - (GuiBuilder.java:146) - Actions loaded successfully
+2012-06-19 11:56:42,114 INFO  Euclide - (EuclideMainFrame.java:186) - Add a view
+2012-06-19 11:56:42,115 INFO  Euclide - (EuclideMainFrame.java:202) - Change current view
+2012-06-19 11:56:42,115 INFO  Euclide - (EuclideMainFrame.java:214) -   change current doc to: NoName
+2012-06-19 11:56:42,174 INFO  Euclide - (EuclideMainFrame.java:307) - setBounds of main frame
+2012-06-19 11:56:42,174 INFO  Euclide - (EuclideMainFrame.java:301) - resize main frame
+2012-06-19 11:56:42,175 INFO  Euclide - (EuclideMainFrame.java:144) - Frame size set to 800*700
+2012-06-19 11:56:42,175 INFO  Euclide - (EuclideMainFrame.java:307) - setBounds of main frame
+2012-06-19 11:56:42,176 INFO  Euclide - (GuiBuilder.java:292) - Menu resource file opened
+2012-06-19 11:56:42,183 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: CTRL_N
+2012-06-19 11:56:42,188 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: CTRL_O
+2012-06-19 11:56:42,193 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: CTRL_W
+2012-06-19 11:56:42,195 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: CTRL_Q
+2012-06-19 11:56:42,208 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: SUPPR
+2012-06-19 11:56:42,393 INFO  Euclide - (EuclideMainFrame.java:186) - Add a view
+2012-06-19 11:56:42,394 INFO  Euclide - (EuclideMainFrame.java:202) - Change current view
+2012-06-19 11:56:42,394 INFO  Euclide - (EuclideMainFrame.java:214) -   change current doc to: NoName
+2012-06-19 11:56:42,395 INFO  Euclide - (Euclide.java:73) - Create Main frame
+2012-06-19 11:56:42,551 INFO  Euclide - (Euclide.java:77) - Initialize document
+2012-06-19 11:57:11,860 INFO  Euclide - (EuclideMainFrame.java:389) - close frame
+2012-06-19 11:57:13,717 INFO  Euclide - (Euclide.java:59) - Start programm Euclide
+2012-06-19 11:57:13,800 INFO  Euclide - (Euclide.java:68) - Create GUI
+2012-06-19 11:57:13,953 INFO  Euclide - (GuiBuilder.java:114) - Tools loaded successfully
+2012-06-19 11:57:13,987 INFO  Euclide - (GuiBuilder.java:146) - Actions loaded successfully
+2012-06-19 11:57:14,290 INFO  Euclide - (EuclideMainFrame.java:186) - Add a view
+2012-06-19 11:57:14,291 INFO  Euclide - (EuclideMainFrame.java:202) - Change current view
+2012-06-19 11:57:14,291 INFO  Euclide - (EuclideMainFrame.java:214) -   change current doc to: NoName
+2012-06-19 11:57:14,350 INFO  Euclide - (EuclideMainFrame.java:307) - setBounds of main frame
+2012-06-19 11:57:14,350 INFO  Euclide - (EuclideMainFrame.java:301) - resize main frame
+2012-06-19 11:57:14,351 INFO  Euclide - (EuclideMainFrame.java:144) - Frame size set to 800*700
+2012-06-19 11:57:14,351 INFO  Euclide - (EuclideMainFrame.java:307) - setBounds of main frame
+2012-06-19 11:57:14,352 INFO  Euclide - (GuiBuilder.java:292) - Menu resource file opened
+2012-06-19 11:57:14,359 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: CTRL_N
+2012-06-19 11:57:14,364 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: CTRL_O
+2012-06-19 11:57:14,370 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: CTRL_W
+2012-06-19 11:57:14,371 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: CTRL_Q
+2012-06-19 11:57:14,385 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: SUPPR
+2012-06-19 11:57:14,581 INFO  Euclide - (EuclideMainFrame.java:186) - Add a view
+2012-06-19 11:57:14,581 INFO  Euclide - (EuclideMainFrame.java:202) - Change current view
+2012-06-19 11:57:14,582 INFO  Euclide - (EuclideMainFrame.java:214) -   change current doc to: NoName
+2012-06-19 11:57:14,583 INFO  Euclide - (Euclide.java:73) - Create Main frame
+2012-06-19 11:57:14,738 INFO  Euclide - (Euclide.java:77) - Initialize document
+2012-06-19 11:57:16,495 INFO  Euclide - (EuclideGui.java:1023) - Remove doc from gui: NoName
+2012-06-19 11:57:17,814 INFO  Euclide - (SelectToolAction.java:60) - select tool: addCircle3Points
+2012-06-19 11:57:24,229 INFO  Euclide - (EuclideMainFrame.java:389) - close frame
+2012-06-19 11:57:25,670 INFO  Euclide - (EuclideGui.java:1023) - Remove doc from gui: NoName
+2012-06-19 12:00:30,662 INFO  Euclide - (Euclide.java:59) - Start programm Euclide
+2012-06-19 12:00:30,746 INFO  Euclide - (Euclide.java:68) - Create GUI
+2012-06-19 12:00:30,905 INFO  Euclide - (GuiBuilder.java:114) - Tools loaded successfully
+2012-06-19 12:00:30,939 INFO  Euclide - (GuiBuilder.java:146) - Actions loaded successfully
+2012-06-19 12:00:31,259 INFO  Euclide - (EuclideMainFrame.java:186) - Add a view
+2012-06-19 12:00:31,259 INFO  Euclide - (EuclideMainFrame.java:202) - Change current view
+2012-06-19 12:00:31,259 INFO  Euclide - (EuclideMainFrame.java:214) -   change current doc to: NoName
+2012-06-19 12:00:31,323 INFO  Euclide - (EuclideMainFrame.java:307) - setBounds of main frame
+2012-06-19 12:00:31,323 INFO  Euclide - (EuclideMainFrame.java:301) - resize main frame
+2012-06-19 12:00:31,324 INFO  Euclide - (EuclideMainFrame.java:144) - Frame size set to 800*700
+2012-06-19 12:00:31,324 INFO  Euclide - (EuclideMainFrame.java:307) - setBounds of main frame
+2012-06-19 12:00:31,325 INFO  Euclide - (GuiBuilder.java:292) - Menu resource file opened
+2012-06-19 12:00:31,332 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: CTRL_N
+2012-06-19 12:00:31,338 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: CTRL_O
+2012-06-19 12:00:31,344 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: CTRL_W
+2012-06-19 12:00:31,345 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: CTRL_Q
+2012-06-19 12:00:31,360 INFO  Euclide - (GuiBuilder.java:437) - add accelerator: SUPPR
+2012-06-19 12:00:31,550 INFO  Euclide - (EuclideMainFrame.java:186) - Add a view
+2012-06-19 12:00:31,550 INFO  Euclide - (EuclideMainFrame.java:202) - Change current view
+2012-06-19 12:00:31,551 INFO  Euclide - (EuclideMainFrame.java:214) -   change current doc to: NoName
+2012-06-19 12:00:31,551 INFO  Euclide - (Euclide.java:73) - Create Main frame
+2012-06-19 12:00:31,728 INFO  Euclide - (Euclide.java:77) - Initialize document
+2012-06-19 12:00:35,384 INFO  Euclide - (SelectToolAction.java:60) - select tool: addEllipse3Points
+2012-06-19 12:01:00,671 INFO  Euclide - (EuclideMainFrame.java:389) - close frame
+2012-06-19 12:01:02,183 INFO  Euclide - (EuclideGui.java:1023) - Remove doc from gui: NoName
