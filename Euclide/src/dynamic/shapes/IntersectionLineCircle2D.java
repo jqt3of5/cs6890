@@ -53,10 +53,10 @@ public class IntersectionLineCircle2D extends DynamicShape2D{
 
 		parents.add(line);
 		parents.add(circle);
-		parents.trimToSize();
+		//parents.trimToSize();
 		
 		parameters.add(num);
-		parameters.trimToSize();
+		//parameters.trimToSize();
 
 		this.point = new Point2D();
 	//	update(); 

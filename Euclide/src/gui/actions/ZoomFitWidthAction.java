@@ -77,8 +77,9 @@ public class ZoomFitWidthAction extends EuclideAction {
 		view.setZoom(zoom);
 		
 		// update display
-		view.invalidate();
-		gui.getCurrentFrame().validate();
-		gui.getCurrentFrame().repaint();
+		//aspected
+		//view.invalidate();
+		//gui.getCurrentFrame().validate();
+		//gui.getCurrentFrame().repaint();
 	}
 }

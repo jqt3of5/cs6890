@@ -53,7 +53,7 @@ public class PointPointSet2D extends DynamicShape2D {
 
 		parents.add(pointSet);
 		parents.add(index);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 		//update(); 
 	}
@@ -63,10 +63,10 @@ public class PointPointSet2D extends DynamicShape2D {
 		this.parent2 = new CountWrapper2D(index);
 
 		parents.add(pointSet);
-		parents.trimToSize();
+		//parents.trimToSize();
 		
 		parameters.add(new CountWrapper2D(index));
-		parameters.trimToSize();
+		//parameters.trimToSize();
 		
 		//update(); 
 	}
@@ -110,7 +110,7 @@ public class PointPointSet2D extends DynamicShape2D {
 		this.parent2 = new CountWrapper2D(num);
 		
 		this.parameters.add(num);
-		this.parameters.trimToSize();
+		//this.parameters.trimToSize();
 		
 		//update(); 
 	}

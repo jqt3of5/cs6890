@@ -110,8 +110,9 @@ public class AddPointRelativeToPointTool extends EuclideTool {
 			// return to first step
 			step = 1;
 		}
-		view.repaint();		
-		view.setInstruction(this.getInstruction());
+		//aspected
+		//view.repaint();		
+		//view.setInstruction(this.getInstruction());
 	}
 	
 	

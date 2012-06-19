@@ -49,7 +49,7 @@ public class ParallelLine2D extends DynamicShape2D{
 
 		parents.add(baseLine);
 		parents.add(point);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 		//update();
 	}

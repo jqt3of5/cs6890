@@ -49,7 +49,7 @@ public class IsColinearPoints2D extends DynamicPredicate2D {
 		parents.add(point1);
 		parents.add(point2);
 		parents.add(point3);
-		parents.trimToSize();
+		//parents.trimToSize();
 		
 		//update();
 	}

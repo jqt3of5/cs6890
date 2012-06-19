@@ -53,7 +53,7 @@ public class StraightLinePointAngle2D extends DynamicShape2D {
 
 		parents.add(point);
 		parents.add(angle);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 		//update();
 	}

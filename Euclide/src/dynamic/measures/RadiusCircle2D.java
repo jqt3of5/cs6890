@@ -39,7 +39,7 @@ public class RadiusCircle2D extends DynamicMeasure2D {
 		this.parent1 = circle;
 		
 		parents.add(circle);
-		parents.trimToSize();
+		//parents.trimToSize();
 		
 		//update();
 	}

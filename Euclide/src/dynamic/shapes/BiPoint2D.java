@@ -62,7 +62,7 @@ public class BiPoint2D extends DynamicMoveablePoint2D {
 		this.parent1 = basePoint;
 		
 		parents.add(basePoint);
-		parents.trimToSize();
+		//parents.trimToSize();
 		
 		if(!basePoint.isDefined()) return;
 				
@@ -84,7 +84,7 @@ public class BiPoint2D extends DynamicMoveablePoint2D {
 		parents.add(basePoint);
 		if(location instanceof BiPoint2D)
 			parents.add(location);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 		if(!basePoint.isDefined()) return;
 		if(!location.isDefined()) return;

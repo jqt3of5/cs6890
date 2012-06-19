@@ -50,7 +50,7 @@ public class CurveToPolyline2D extends DynamicShape2D{
 
 		parents.add(curve);
 		parents.add(nbSeg);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 		//update(); 
 	}	

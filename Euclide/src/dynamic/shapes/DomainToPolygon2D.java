@@ -51,7 +51,7 @@ public class DomainToPolygon2D extends DynamicShape2D{
 
 		parents.add(domain);
 		parents.add(nbSeg);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 		///update(); 
 	}	

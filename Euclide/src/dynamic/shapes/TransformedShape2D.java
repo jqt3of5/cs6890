@@ -51,7 +51,7 @@ public class TransformedShape2D extends DynamicShape2D {
 
 		parents.add(point);
 		parents.add(transform);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 		//update(); 
 	}

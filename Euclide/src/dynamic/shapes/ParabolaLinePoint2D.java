@@ -45,7 +45,7 @@ public class ParabolaLinePoint2D extends DynamicShape2D {
 
 		parents.add(line);
 		parents.add(focus);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 		//update();
 	}

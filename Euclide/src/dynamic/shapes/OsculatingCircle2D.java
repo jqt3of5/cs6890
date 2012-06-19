@@ -52,7 +52,7 @@ public class OsculatingCircle2D extends DynamicShape2D {
 
 		parents.add(curve);
 		parents.add(point);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 	//	update();
 	}

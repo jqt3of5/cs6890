@@ -49,7 +49,7 @@ public class TangentCircleLine2D extends DynamicShape2D{
 
 		parents.add(circle);
 		parents.add(line);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 		//update(); 
 	}

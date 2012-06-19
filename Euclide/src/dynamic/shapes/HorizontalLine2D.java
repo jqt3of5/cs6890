@@ -50,7 +50,7 @@ public class HorizontalLine2D extends DynamicShape2D {
 		this.parent1 = point;
 	
 		parents.add(point);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 		//update();
 	}

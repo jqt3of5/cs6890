@@ -6,6 +6,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="lib/javaGeom-0.10.2.jar" sourcepath="/javaGeom/src"/>
 	<classpathentry kind="lib" path="lib/log4j-1.2.15.jar"/>
-	<classpathentry kind="lib" path="/opt/eclipse/plugins/org.aspectj.runtime_1.6.12.20110613132200/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jqt3of5/.eclipse/org.eclipse.platform_3.7.0_498291788/plugins/org.aspectj.runtime_1.6.12.20110613132200/aspectjrt.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

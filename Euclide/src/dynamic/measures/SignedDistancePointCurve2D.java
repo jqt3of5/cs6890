@@ -43,7 +43,7 @@ public class SignedDistancePointCurve2D extends DynamicMeasure2D {
 		
 		parents.add(curve);
 		parents.add(point2);
-		parents.trimToSize();
+	//	parents.trimToSize();
 		
 		//update();
 	}

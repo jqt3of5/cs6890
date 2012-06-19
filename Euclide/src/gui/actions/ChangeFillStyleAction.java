@@ -63,6 +63,7 @@ public class ChangeFillStyleAction extends EuclideAction {
 				new FillStyleEditPanel(gui),
 				"Edit Fill Style");
 		gui.showDialog(dlg);
-		view.repaint();
+		//aspected
+	//	view.repaint();
 	}
 }

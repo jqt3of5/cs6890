@@ -88,7 +88,7 @@ public class MoveFreePointsTool extends EuclideTool {
 			return;
 		}
 		
-		view.repaint();
+		//view.repaint();
 	}
 
 	@Override
@@ -145,7 +145,7 @@ public class MoveFreePointsTool extends EuclideTool {
 		doc.updateDependencies();
 		doc.setModified(true);
 		gui.getCurrentFrame().updateTitle();
-		view.repaint();
+		//view.repaint();
 	}
 	
 	@Override 
@@ -169,7 +169,7 @@ public class MoveFreePointsTool extends EuclideTool {
 			String shapeName = gui.getAppli().getShapeString(geom);
 			view.setMouseLabel("move this " + shapeName);
 		}
-		view.repaint();
+		//view.repaint();
 	}
 	
 	@Override 
@@ -197,6 +197,6 @@ public class MoveFreePointsTool extends EuclideTool {
 			view.setMouseLabel("move this " + shapeName);
 		}
 		
-		view.repaint();
+	//	view.repaint();
 	}
 }

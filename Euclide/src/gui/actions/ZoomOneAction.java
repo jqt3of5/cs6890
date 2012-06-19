@@ -64,8 +64,9 @@ public class ZoomOneAction extends EuclideAction {
 		view.setZoom(1);
 		
 		// update display
-		view.invalidate();		
-		gui.getCurrentFrame().validate();
-		gui.getCurrentFrame().repaint();
+		//aspected
+		//view.invalidate();		
+		//gui.getCurrentFrame().validate();
+		//gui.getCurrentFrame().repaint();
 	}
 }

@@ -63,7 +63,7 @@ public class Conic5Points2D extends DynamicShape2D{
 		parents.add(point3);
 		parents.add(point4);
 		parents.add(point5);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 		//update(); 
 	}

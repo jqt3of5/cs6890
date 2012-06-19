@@ -72,8 +72,8 @@ public class AddPointOnCurveTool extends EuclideTool {
 		// add to the current layer
 		doc.addFigure(element, layer);
 		
-		
-		view.repaint();
+		//aspected
+		//view.repaint();
 	}
 
 	@Override 

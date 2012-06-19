@@ -315,13 +315,13 @@ public class EuclideDoc extends DynamicObjectsManager {
 		for (EuclideLayer layer : sheet.getLayers()) {
 			addTaggedObject(layer);
 		}
-		this.fireEvent(new DocumentModifiedEvent(this));
+		//this.fireEvent(new DocumentModifiedEvent(this));
 	}
 	
 	public void addSheet(int position, EuclideSheet sheet){
 		sheets.add(position, sheet);
 		sheet.setDocument(this);
-		this.fireEvent(new DocumentModifiedEvent(this));
+		//this.fireEvent(new DocumentModifiedEvent(this));
 	}
 	
 	/**
@@ -359,7 +359,7 @@ public class EuclideDoc extends DynamicObjectsManager {
 		// add to document list of tagged objects
 		this.addTaggedObject(sheet);
 	
-		this.fireEvent(new DocumentModifiedEvent(this));
+		//this.fireEvent(new DocumentModifiedEvent(this));
 		
 		return sheet;
 	}
@@ -367,7 +367,7 @@ public class EuclideDoc extends DynamicObjectsManager {
 	public void removeSheet(EuclideSheet sheet){
 		sheets.remove(sheet);
 		sheet.setDocument(null);
-		this.fireEvent(new DocumentModifiedEvent(this));
+		//this.fireEvent(new DocumentModifiedEvent(this));
 	}
 	
 	public boolean containsSheet(EuclideSheet sheet){
@@ -431,7 +431,7 @@ public class EuclideDoc extends DynamicObjectsManager {
 		}
 		
 		// fire event
-		this.fireEvent(new DocumentModifiedEvent(this));
+	//	this.fireEvent(new DocumentModifiedEvent(this));
 	}
 	
 	/**
@@ -473,7 +473,7 @@ public class EuclideDoc extends DynamicObjectsManager {
 		// add to dynamic hierarchy
 		addDynamicObject(shape);
 		
-		this.fireEvent(new DocumentModifiedEvent(this));
+		//this.fireEvent(new DocumentModifiedEvent(this));
 		return true;
 	}
 	
@@ -505,7 +505,7 @@ public class EuclideDoc extends DynamicObjectsManager {
 		// remove from dynamic hierarchy
 		removeDynamicObject(shape);
 
-		this.fireEvent(new DocumentModifiedEvent(this));
+		//this.fireEvent(new DocumentModifiedEvent(this));
 
 		return true;
 	}
@@ -528,7 +528,7 @@ public class EuclideDoc extends DynamicObjectsManager {
 		// add to dynamic hierarchy
 		addDynamicObject(transform);
 		
-		this.fireEvent(new DocumentModifiedEvent(this));
+		//this.fireEvent(new DocumentModifiedEvent(this));
 		return true;
 	}
 	
@@ -542,7 +542,7 @@ public class EuclideDoc extends DynamicObjectsManager {
 		// remove from dynamic hierarchy
 		removeDynamicObject(transform);
 
-		this.fireEvent(new DocumentModifiedEvent(this));
+		//this.fireEvent(new DocumentModifiedEvent(this));
 		return true;
 	}
 
@@ -565,7 +565,7 @@ public class EuclideDoc extends DynamicObjectsManager {
 		// add to dynamic hierarchy
 		addDynamicObject(measure);
 		
-		this.fireEvent(new DocumentModifiedEvent(this));
+		//this.fireEvent(new DocumentModifiedEvent(this));
 		return true;
 	}
 	
@@ -573,7 +573,7 @@ public class EuclideDoc extends DynamicObjectsManager {
 		setModified(true);
 		if(!measures.contains(measure)) return false;
 		
-		this.fireEvent(new DocumentModifiedEvent(this));
+		//this.fireEvent(new DocumentModifiedEvent(this));
 
 		measures.remove(measure);
 		if(measure instanceof Constant2D)
@@ -608,7 +608,7 @@ public class EuclideDoc extends DynamicObjectsManager {
 		// add to dynamic hierarchy
 		addDynamicObject(vector);
 		
-		this.fireEvent(new DocumentModifiedEvent(this));
+		//this.fireEvent(new DocumentModifiedEvent(this));
 		return true;
 	}
 	
@@ -622,7 +622,7 @@ public class EuclideDoc extends DynamicObjectsManager {
 		// remove from dynamic hierarchy
 		removeDynamicObject(vector);
 
-		this.fireEvent(new DocumentModifiedEvent(this));
+		//this.fireEvent(new DocumentModifiedEvent(this));
 		return true;
 	}
 	
@@ -644,7 +644,7 @@ public class EuclideDoc extends DynamicObjectsManager {
 		// add to dynamic hierarchy
 		addDynamicObject(predicate);
 		
-		this.fireEvent(new DocumentModifiedEvent(this));
+		//this.fireEvent(new DocumentModifiedEvent(this));
 		return true;
 	}
 	
@@ -658,7 +658,7 @@ public class EuclideDoc extends DynamicObjectsManager {
 		// remove from dynamic hierarchy
 		removeDynamicObject(predicate);
 		
-		this.fireEvent(new DocumentModifiedEvent(this));
+		//this.fireEvent(new DocumentModifiedEvent(this));
 		return true;
 	}
 	
@@ -675,7 +675,7 @@ public class EuclideDoc extends DynamicObjectsManager {
 		if(macros.contains(macro)) return false;
 		macros.add(macro);
 		
-		this.fireEvent(new DocumentModifiedEvent(this));
+		//this.fireEvent(new DocumentModifiedEvent(this));
 		return true;
 	}
 	
@@ -683,7 +683,7 @@ public class EuclideDoc extends DynamicObjectsManager {
 		setModified(true);
 		if(!macros.contains(macro)) return false;
 		
-		this.fireEvent(new DocumentModifiedEvent(this));
+		//this.fireEvent(new DocumentModifiedEvent(this));
 
 		macros.remove(macro);
 		
@@ -713,14 +713,14 @@ public class EuclideDoc extends DynamicObjectsManager {
 		if(styles.contains(style)) return false;
 		styles.add(style);
 		
-		this.fireEvent(new DocumentModifiedEvent(this));
+		//this.fireEvent(new DocumentModifiedEvent(this));
 		return true;
 	}
 	
 	public boolean removeStyle(NamedDrawStyle style){
 		if(!styles.contains(style)) return false;
 		
-		this.fireEvent(new DocumentModifiedEvent(this));
+		//this.fireEvent(new DocumentModifiedEvent(this));
 
 		styles.remove(style);
 		
@@ -754,8 +754,8 @@ public class EuclideDoc extends DynamicObjectsManager {
 		for(EuclideDocListener listener : listeners)
 			listener.documentModified(evt);
 	}
-	
-	private class DocumentModifiedEvent extends EuclideDocEvent{
+	//changed to static
+	private static class DocumentModifiedEvent extends EuclideDocEvent{
 		int state = 0;
 		EuclideDoc doc;
 		

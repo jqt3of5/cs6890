@@ -65,7 +65,7 @@ public class PolygonEdge2D extends DynamicShape2D {
 
 		parents.add(parent1);
 		parents.add(index);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 		//update();
 	}

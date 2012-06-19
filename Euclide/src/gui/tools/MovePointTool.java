@@ -60,7 +60,7 @@ public class MovePointTool extends EuclideTool {
 		point1 = (Point2D)(elem.getGeometry().getShape());
 		
 		view.setMouseLabel("");
-		view.repaint();
+	//	view.repaint();
 	}
 
 	@Override
@@ -76,7 +76,7 @@ public class MovePointTool extends EuclideTool {
 		
 		EuclideApp appli = gui.getAppli();
 		appli.getCurrentDoc().updateDependencies();
-		view.repaint();
+		//view.repaint();
 	}
 	
 	@Override 
@@ -100,7 +100,7 @@ public class MovePointTool extends EuclideTool {
 			String shapeName = gui.getAppli().getShapeString(dynamic);
 			view.setMouseLabel("move this " + shapeName);
 		}
-		view.repaint();
+		//view.repaint();
 	}
 	
 	@Override 
@@ -123,6 +123,6 @@ public class MovePointTool extends EuclideTool {
 			String shapeName = gui.getAppli().getShapeString(dynamic);
 			view.setMouseLabel("move this " + shapeName);
 		}
-		view.repaint();
+	//	view.repaint();
 	}
 }

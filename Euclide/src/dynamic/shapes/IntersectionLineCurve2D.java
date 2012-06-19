@@ -52,7 +52,7 @@ public class IntersectionLineCurve2D extends DynamicShape2D{
 
 		parents.add(line);
 		parents.add(curve);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 		//update();
 	}

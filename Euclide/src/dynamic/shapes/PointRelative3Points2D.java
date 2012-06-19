@@ -68,12 +68,12 @@ public class PointRelative3Points2D extends DynamicShape2D {
 		parents.add(point0);
 		parents.add(point1);
 		parents.add(point2);
-		parents.trimToSize();
+		//parents.trimToSize();
 		
 		// stores parameters
 		parameters.add(alpha);
 		parameters.add(beta);
-		parameters.trimToSize();
+		//parameters.trimToSize();
 
 		this.parent4 = new Constant2D(alpha);
 		this.parent5 = new Constant2D(beta);
@@ -104,7 +104,7 @@ public class PointRelative3Points2D extends DynamicShape2D {
 		parents.add(point2);
 		parents.add(alpha);
 		parents.add(beta);
-		parents.trimToSize();
+		//parents.trimToSize();
 		
 		//update();
 	}
@@ -128,7 +128,7 @@ public class PointRelative3Points2D extends DynamicShape2D {
 		parents.add(p0);
 		parents.add(p1);
 		parents.add(p2);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 		if(!parent1.isDefined()) return;
 		if(!parent2.isDefined()) return;
@@ -169,7 +169,7 @@ public class PointRelative3Points2D extends DynamicShape2D {
 
 		parameters.add(alpha);
 		parameters.add(beta);
-		parameters.trimToSize();
+		//parameters.trimToSize();
 
 		this.parent4 = new Constant2D(alpha);
 		this.parent5 = new Constant2D(beta);

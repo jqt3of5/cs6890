@@ -82,7 +82,8 @@ public class AddPolygonVertexTool extends EuclideTool {
 		// add construction to current doc
 		gui.addNewObject(gui.getCurrentView().getDoc(), vertex);
 				
-		view.repaint();
+		//aspected
+		//view.repaint();
 	}
 
 	@Override 

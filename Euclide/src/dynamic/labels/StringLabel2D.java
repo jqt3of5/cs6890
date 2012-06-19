@@ -34,10 +34,10 @@ public class StringLabel2D extends DynamicLabel2D {
         label.setText(text);
         
         parents.add(position);
-        parents.trimToSize();
+        //parents.trimToSize();
         
         parameters.add(text);
-        parameters.trimToSize();
+       // parameters.trimToSize();
         
      //   update();
     }

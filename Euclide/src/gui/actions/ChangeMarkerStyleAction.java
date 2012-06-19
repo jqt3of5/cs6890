@@ -63,6 +63,7 @@ public class ChangeMarkerStyleAction extends EuclideAction {
 				new MarkerStyleEditPanel(gui),
 				"Edit Marker Style");
 		gui.showDialog(dlg);
-		view.repaint();
+		//aspected
+		//view.repaint();
 	}
 }

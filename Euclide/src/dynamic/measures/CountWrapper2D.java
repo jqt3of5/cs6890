@@ -52,7 +52,7 @@ public class CountWrapper2D extends DynamicMeasure2D {
 		super();
 		this.measure = measure;
 		this.parameters.add(measure.getCount());
-		this.parameters.trimToSize();
+		//this.parameters.trimToSize();
 		this.defined = true;
 	}
 

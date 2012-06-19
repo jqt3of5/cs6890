@@ -46,7 +46,7 @@ public class CurveToDomain2D extends DynamicShape2D{
 		this.parent1 = curve;
 
 		parents.add(curve);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 		//update(); 
 	}	

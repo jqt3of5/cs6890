@@ -53,7 +53,7 @@ public class Bisector2Lines2D extends DynamicShape2D{
 			
 		parents.add(line1);
 		parents.add(line2);
-		parents.trimToSize();
+		//parents.trimToSize();
 		
 		//update();
 	}
@@ -67,7 +67,7 @@ public class Bisector2Lines2D extends DynamicShape2D{
 		parents.add(line1);
 		parents.add(line2);
 		parents.add(pred);
-		parents.trimToSize();
+	//	parents.trimToSize();
 		
 	//	update();
 	}

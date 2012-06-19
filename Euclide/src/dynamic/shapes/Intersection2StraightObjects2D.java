@@ -50,7 +50,7 @@ public class Intersection2StraightObjects2D extends DynamicShape2D {
 
 		parents.add(line1);
 		parents.add(line2);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 	//	update();
 	}

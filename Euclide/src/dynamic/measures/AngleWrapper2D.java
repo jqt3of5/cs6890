@@ -52,7 +52,7 @@ public class AngleWrapper2D extends DynamicMeasure2D {
 		super();
 		this.measure = measure;
 		this.parameters.add(measure.getAngle(AngleUnit.DEGREE));
-		this.parameters.trimToSize();
+		//this.parameters.trimToSize();
 		this.defined = true;
 	}
 

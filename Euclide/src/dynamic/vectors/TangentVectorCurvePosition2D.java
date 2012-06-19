@@ -56,7 +56,7 @@ public class TangentVectorCurvePosition2D extends DynamicVector2D {
 
 		parents.add(curve);
 		parents.add(position);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 	//	update();
 	}	

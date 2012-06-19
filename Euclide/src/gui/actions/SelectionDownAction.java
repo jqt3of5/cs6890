@@ -78,8 +78,8 @@ public class SelectionDownAction extends EuclideAction {
 			for(EuclideLayer layer : layers){
 				layer.setShapeIndex(element, layer.getShapePosition(element)-1);
 			}
-		
-		view.repaint();
+		//aspected
+		//view.repaint();
 	}
 
 }

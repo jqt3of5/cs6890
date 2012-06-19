@@ -1,5 +1,8 @@
 package aspects;
 import dynamic.*;
+
+import java.util.*;
+
 import dynamic.shapes.ShapeWrapper2D;
 import dynamic.shapes.DynamicMoveablePoint2D;
 public aspect UpdateAspect {
@@ -13,6 +16,7 @@ public aspect UpdateAspect {
 	
 	after (DynamicObject2D shape) returning: dynamic2DDerivedConstructor(shape)
 	{
+	
 		shape.update();
 	}
 }

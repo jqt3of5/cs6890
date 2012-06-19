@@ -40,7 +40,7 @@ public class LengthLineSegment2D extends DynamicMeasure2D {
 		this.parent1 = segment;
 
 		parents.add(segment);
-		parents.trimToSize();
+		//parents.trimToSize();
 		
 		//update();
 	}

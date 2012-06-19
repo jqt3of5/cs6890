@@ -51,7 +51,7 @@ public class Circle3Points2D extends DynamicShape2D{
 		parents.add(point1);
 		parents.add(point2);
 		parents.add(point3);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 		//update(); 
 	}

@@ -42,7 +42,7 @@ public class PredicateLabel2D extends DynamicLabel2D {
 		
 		parents.add(position);
 		parents.add(predicate);
-		parents.trimToSize();
+		//parents.trimToSize();
 		
 		//update();
 	}

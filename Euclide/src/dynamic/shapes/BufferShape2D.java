@@ -51,7 +51,7 @@ public class BufferShape2D extends DynamicShape2D{
 	    
 		parents.add(parent1);
 		parents.add(parent2);
-		parents.trimToSize();
+		//parents.trimToSize();
         
 		//update(); 
 	}

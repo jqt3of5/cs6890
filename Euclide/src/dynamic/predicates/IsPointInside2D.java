@@ -43,7 +43,7 @@ public class IsPointInside2D extends DynamicPredicate2D {
 		
 		parents.add(point);
 		parents.add(curve);
-		parents.trimToSize();
+		//parents.trimToSize();
 		
 	//	update();
 	}

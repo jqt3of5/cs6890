@@ -44,7 +44,7 @@ public class CurveLocus2D extends DynamicShape2D {
 		this.parent1 = point;
 
 		parents.add(point);
-		parents.trimToSize();
+		//parents.trimToSize();
 		this.defined = true;
 
 		//update();

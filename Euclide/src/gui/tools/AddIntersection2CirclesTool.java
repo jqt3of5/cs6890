@@ -102,9 +102,9 @@ public class AddIntersection2CirclesTool extends EuclideTool {
 			// return to first step
 			step = 1;
 		}
-		
-		view.repaint();		
-		view.setInstruction(this.getInstruction());
+		//aspected
+		//view.repaint();		
+		//view.setInstruction(this.getInstruction());
 	}
 
 	@Override 

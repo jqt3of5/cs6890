@@ -43,7 +43,7 @@ public class MeasureLabel2D extends DynamicLabel2D {
 		
 		parents.add(position);
 		parents.add(measure);
-		parents.trimToSize();
+		//parents.trimToSize();
 		
 	//	update();
 	}

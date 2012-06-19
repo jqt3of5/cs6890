@@ -80,7 +80,8 @@ public class SelectionDeleteAction extends EuclideAction {
 			doc.removeDynamicShape(dynamic);
 		
 		view.clearSelection();
-		view.repaint();
+		//aspected
+		//view.repaint();
 	}
 
 }

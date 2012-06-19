@@ -51,7 +51,7 @@ public class SubCurve2D extends DynamicShape2D{
 		parents.add(baseCurve);
 		parents.add(point1);
 		parents.add(point2);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 		//update();
 	}

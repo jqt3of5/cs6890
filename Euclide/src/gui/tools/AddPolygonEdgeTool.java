@@ -83,7 +83,8 @@ public class AddPolygonEdgeTool extends EuclideTool {
 		// add construction to current doc
 		gui.addNewObject(gui.getCurrentView().getDoc(), polyEdge);
 		
-		view.repaint();
+		//aspected
+		//view.repaint();
 	}
 
 	@Override

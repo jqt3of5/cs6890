@@ -67,6 +67,7 @@ public class ChangeLineStyleAction extends EuclideAction {
 				new LineStyleEditPanel(gui),
 				"Edit Line Style");
 		gui.showDialog(dlg);
-		view.repaint();
+		//aspected
+		//view.repaint();
 	}
 }

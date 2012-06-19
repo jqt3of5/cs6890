@@ -72,8 +72,8 @@ public class SelectionChangeLayerAction extends EuclideAction {
 			doc.setFigureLayer(shape, layer);
 		
 		selection.clear();
-		
-		view.repaint();
+		//aspected
+		//view.repaint();
 	}
 
 }

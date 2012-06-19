@@ -58,7 +58,7 @@ public class Intersection2Polygons2D extends DynamicShape2D{
 		
 		parents.add(poly1);
 		parents.add(poly2);
-		parents.trimToSize();
+		//parents.trimToSize();
 		
 		//update(); 
 	}

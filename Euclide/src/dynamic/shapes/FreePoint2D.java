@@ -44,7 +44,7 @@ public class FreePoint2D extends DynamicMoveablePoint2D {
 		// set up parameters
 		parameters.add(x);
 		parameters.add(y);
-		parameters.trimToSize();
+		//parameters.trimToSize();
 		
 		//update();
 	}

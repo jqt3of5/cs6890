@@ -268,8 +268,9 @@ public class AddConstructionTool extends EuclideTool {
 		gui.getCurrentDoc().setModified(true);
 		gui.getCurrentFrame().updateTitle();
 		
-		view.repaint();
-		view.setInstruction(this.getInstruction());
+		//aspected
+		//view.repaint();
+		//view.setInstruction(this.getInstruction());
 	}
 
 	@SuppressWarnings("unchecked")

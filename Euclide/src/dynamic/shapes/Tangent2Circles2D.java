@@ -71,11 +71,11 @@ public class Tangent2Circles2D extends DynamicShape2D{
 		
 		parents.add(c1);
 		parents.add(c2);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 		parameters.add(c1Direct);
 		parameters.add(c2Direct);
-		parameters.trimToSize();
+		//parameters.trimToSize();
 		
 		//update(); 
 	}
@@ -91,7 +91,7 @@ public class Tangent2Circles2D extends DynamicShape2D{
 		parents.add(c2);
 		parents.add(c1Direct);
 		parents.add(c2Direct);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 	//	update(); 
 	}

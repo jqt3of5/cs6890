@@ -58,8 +58,9 @@ public class AddFreePointTool extends EuclideTool {
 		// add to the doc
 		gui.addNewObject(gui.getCurrentView().getDoc(), dynamic);									
 
+		//aspected
 		// update display
-		view.repaint();		
+		//view.repaint();		
 	}
 	@Override 
 	public void mouseMoved(MouseEvent evt){		

@@ -55,7 +55,7 @@ public class ReflectedRay2D extends DynamicShape2D {
 
 		parents.add(ray);
 		parents.add(curve);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 		//update();
 	}

@@ -36,7 +36,7 @@ public class DynamicNameLabel2D extends DynamicLabel2D {
         this.parent2 = position;
         parents.add(dynamic);
         parents.add(position);
-        parents.trimToSize();
+      //  parents.trimToSize();
         
     //    update();
     }

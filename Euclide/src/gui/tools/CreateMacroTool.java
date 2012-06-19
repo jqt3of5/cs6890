@@ -226,7 +226,8 @@ public class CreateMacroTool extends EuclideTool {
     		
     	gui.getCurrentDoc().addMacro(macro);
     	
-		view.repaint();
+		//aspected
+		//view.repaint();
 	}
 
 	@Override 
@@ -249,6 +250,7 @@ public class CreateMacroTool extends EuclideTool {
 			String shapeName = gui.getAppli().getShapeString(geom);
 			view.setMouseLabel("add this " + shapeName);
 		}
+		
 		view.repaint();
 	}
 }

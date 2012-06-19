@@ -46,11 +46,11 @@ public class PointRelativePoint2D extends DynamicMoveablePoint2D {
 		this.parent1 = basePoint;		
 
 		parents.add(basePoint);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 		parameters.add(0);
 		parameters.add(1);
-		parameters.trimToSize();
+		//parameters.trimToSize();
 		
 		if(!basePoint.isDefined()) return;
 		if(!location.isDefined()) return;
@@ -82,11 +82,11 @@ public class PointRelativePoint2D extends DynamicMoveablePoint2D {
 		this.parent1 = basePoint;		
 
 		parents.add(basePoint);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 		this.parameters.add(dx);
 		this.parameters.add(dy);
-		parameters.trimToSize();
+		//parameters.trimToSize();
 		
 		//update(); 
 	}

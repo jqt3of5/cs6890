@@ -49,7 +49,7 @@ public class Point2Values2D extends DynamicShape2D {
 
 		parents.add(posX);
 		parents.add(posY);
-		parents.trimToSize();
+		//parents.trimToSize();
 
 	//	update();
 	}
